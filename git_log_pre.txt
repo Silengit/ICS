@@ -1,0 +1,2246 @@
+commit 2229979fe1fd843e6266aa0ceac60be9ced4fdf3
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 10:09:45 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     10:09:45 up 1 day,  8:46,  1 user,  load average: 1.06, 0.83, 0.60
+    8a0462b3c89042cbeeaf0d4dd5aac5dec7ab5cd7
+
+:000000 100644 0000000... 08460a0... A	game/game
+:000000 100644 0000000... e26a27a... A	kernel/kernel
+:000000 100644 0000000... 45dcc15... A	kernel/kernel.img
+:000000 100644 0000000... f4c68d5... A	nemu/nemu
+:000000 100644 0000000... 6a2d4fe... A	testcase/src/add
+:000000 100644 0000000... 79e3c36... A	testcase/src/add-longlong
+:000000 100644 0000000... d481d4f... A	testcase/src/bit
+:000000 100644 0000000... 6cdbb04... A	testcase/src/bubble-sort
+:000000 100644 0000000... 76dea3a... A	testcase/src/echo
+:000000 100644 0000000... 8fa217c... A	testcase/src/fact
+:000000 100644 0000000... 51552fc... A	testcase/src/fib
+:000000 100644 0000000... eb40fa0... A	testcase/src/gotbaha
+:000000 100644 0000000... 95bd180... A	testcase/src/hello-inline
+:000000 100644 0000000... 83655a3... A	testcase/src/hello-str
+:000000 100644 0000000... 0c88f21... A	testcase/src/if-else
+:000000 100644 0000000... 26106bb... A	testcase/src/leap-year
+:000000 100644 0000000... 8fccad2... A	testcase/src/matrix-mul
+:000000 100644 0000000... 3352057... A	testcase/src/matrix-mul-small
+:000000 100644 0000000... 46f56c1... A	testcase/src/max
+:000000 100644 0000000... 4f153cd... A	testcase/src/min3
+:000000 100644 0000000... 62d73f1... A	testcase/src/mov
+:000000 100644 0000000... b83d9cd... A	testcase/src/mov-c
+:000000 100644 0000000... 94c252c... A	testcase/src/mov-cmp
+:000000 100644 0000000... c5b5741... A	testcase/src/mov-jcc
+:000000 100644 0000000... 885d5dc... A	testcase/src/movsx
+:000000 100644 0000000... 6aecd7b... A	testcase/src/mul-longlong
+:000000 100644 0000000... 5f5a5b9... A	testcase/src/pascal
+:000000 100644 0000000... 40efb03... A	testcase/src/prime
+:000000 100644 0000000... 686d795... A	testcase/src/quick-sort
+:000000 100644 0000000... 3301832... A	testcase/src/select-sort
+:000000 100644 0000000... 68196ca... A	testcase/src/shuixianhua
+:000000 100644 0000000... b7c4529... A	testcase/src/string
+:000000 100644 0000000... 578403a... A	testcase/src/struct
+:000000 100644 0000000... aeff859... A	testcase/src/sub-longlong
+:000000 100644 0000000... 598db70... A	testcase/src/sum
+:000000 100644 0000000... d07dd68... A	testcase/src/test-float
+:000000 100644 0000000... ab2398e... A	testcase/src/wanshu
+
+commit 9ef6cff2525c31f2a07c0f417b228ee7b8bc1d64
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 10:09:17 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     10:09:17 up 1 day,  8:45,  1 user,  load average: 0.62, 0.74, 0.56
+    72705e95c898bbe6cb3af24067947f713a81e456
+
+:100644 000000 fe371f0... 0000000... D	game/game
+:100644 000000 e26a27a... 0000000... D	kernel/kernel
+:100644 000000 45dcc15... 0000000... D	kernel/kernel.img
+:100644 000000 2275b2d... 0000000... D	nemu/nemu
+:100644 000000 6a2d4fe... 0000000... D	testcase/src/add
+:100644 000000 79e3c36... 0000000... D	testcase/src/add-longlong
+:100644 000000 d481d4f... 0000000... D	testcase/src/bit
+:100644 000000 6cdbb04... 0000000... D	testcase/src/bubble-sort
+:100644 000000 76dea3a... 0000000... D	testcase/src/echo
+:100644 000000 8fa217c... 0000000... D	testcase/src/fact
+:100644 000000 51552fc... 0000000... D	testcase/src/fib
+:100644 000000 eb40fa0... 0000000... D	testcase/src/gotbaha
+:100644 000000 95bd180... 0000000... D	testcase/src/hello-inline
+:100644 000000 83655a3... 0000000... D	testcase/src/hello-str
+:100644 000000 0c88f21... 0000000... D	testcase/src/if-else
+:100644 000000 26106bb... 0000000... D	testcase/src/leap-year
+:100644 000000 8fccad2... 0000000... D	testcase/src/matrix-mul
+:100644 000000 3352057... 0000000... D	testcase/src/matrix-mul-small
+:100644 000000 46f56c1... 0000000... D	testcase/src/max
+:100644 000000 4f153cd... 0000000... D	testcase/src/min3
+:100644 000000 62d73f1... 0000000... D	testcase/src/mov
+:100644 000000 b83d9cd... 0000000... D	testcase/src/mov-c
+:100644 000000 94c252c... 0000000... D	testcase/src/mov-cmp
+:100644 000000 c5b5741... 0000000... D	testcase/src/mov-jcc
+:100644 000000 885d5dc... 0000000... D	testcase/src/movsx
+:100644 000000 6aecd7b... 0000000... D	testcase/src/mul-longlong
+:100644 000000 5f5a5b9... 0000000... D	testcase/src/pascal
+:100644 000000 40efb03... 0000000... D	testcase/src/prime
+:100644 000000 686d795... 0000000... D	testcase/src/quick-sort
+:100644 000000 3301832... 0000000... D	testcase/src/select-sort
+:100644 000000 68196ca... 0000000... D	testcase/src/shuixianhua
+:100644 000000 b7c4529... 0000000... D	testcase/src/string
+:100644 000000 578403a... 0000000... D	testcase/src/struct
+:100644 000000 aeff859... 0000000... D	testcase/src/sub-longlong
+:100644 000000 598db70... 0000000... D	testcase/src/sum
+:100644 000000 d07dd68... 0000000... D	testcase/src/test-float
+:100644 000000 ab2398e... 0000000... D	testcase/src/wanshu
+
+commit a8a8f4a7dad3fb5e76c27d622a2fffb8319ca989
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 10:08:54 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     10:08:54 up 1 day,  8:45,  1 user,  load average: 0.57, 0.74, 0.56
+    745b149934b7ec156992390d71cd80d6f0d7cd58
+
+:100644 100644 d6a5cd8... 2275b2d... M	nemu/nemu
+
+commit fbb026cc94095eccce3c87a738eb59b1277f5695
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 10:08:52 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     10:08:52 up 1 day,  8:45,  1 user,  load average: 0.57, 0.74, 0.56
+    bf8d620c5e7aa0f53b3943553e27309a141a8ef4
+
+:100644 100644 2275b2d... d6a5cd8... M	nemu/nemu
+
+commit 03e77eb4fd1a7e4db621f2a6d71b6874c8d79000
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 10:08:47 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     10:08:47 up 1 day,  8:45,  1 user,  load average: 0.62, 0.75, 0.56
+    34fe615f7db984e66ac5b969a6400f3163415069
+
+:100644 100644 59619dc... 0a21c77... M	game/Makefile
+
+commit 75673049b2e01cb8e4e8cdd48aa640561b35f5f8
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 09:41:24 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     09:41:24 up 1 day,  8:18,  1 user,  load average: 1.07, 0.38, 0.30
+    215272a5ae47ecbd1dff9a052a02d7e87337053
+
+:100644 100644 40c780f... 2275b2d... M	nemu/nemu
+
+commit 29805d52e20719af8a8265bba342351bd7135c8c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 09:41:22 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     09:41:21 up 1 day,  8:17,  1 user,  load average: 1.07, 0.38, 0.30
+    46f485a766ebf8316560f1b760c665d997338480
+
+:100644 100644 7293f53... 2fd5003... M	nemu/src/cpu/decode/opcode.c
+
+commit 4cb8144ca4b52783b01b0c751438b71492637750
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 09:21:20 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     09:21:20 up 1 day,  7:57,  1 user,  load average: 0.34, 0.11, 0.24
+    f513511590aa3fb6c4f532cfac8cb7e967cb90f7
+
+:100644 100644 f18a39c... 40c780f... M	nemu/nemu
+
+commit c6ff726b6bbb22e2e52e24b37bcd6858d8f6bec6
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 09:21:17 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     09:21:17 up 1 day,  7:57,  1 user,  load average: 0.02, 0.05, 0.21
+    cfe80f6194c78d04ed2fef48a827579eb72eca64
+
+:100644 100644 7df5593... 9b6931e... M	nemu/include/cpu/instr/setcc.h
+:100644 100644 7ff326c... 7293f53... M	nemu/src/cpu/decode/opcode.c
+:100644 100644 ac69b8e... de738ca... M	nemu/src/cpu/instr/setcc.c
+
+commit 954d28cab281dba9c91aead85cb8f2070e70d8fc
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 08:26:02 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     08:26:02 up 1 day,  7:02,  1 user,  load average: 0.44, 0.36, 0.58
+    9adc3c3a10cecddf27990fe5466633b07fd00019
+
+:100644 100644 155cccd... f18a39c... M	nemu/nemu
+
+commit 611a2f1630c81e3c5681f2413cf822bd4a1e25ae
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 08:26:00 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     08:26:00 up 1 day,  7:02,  1 user,  load average: 0.22, 0.32, 0.57
+    243c22c524d763e5612ed6456f747cb24de2d191
+
+:100644 100644 d230e4f... be85222... M	nemu/src/cpu/instr/test.c
+
+commit c13b3cbe32b7293325c88039e1741d7d9bc9ffea
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 05:26:31 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:26:31 up 1 day,  4:16,  1 user,  load average: 0.05, 0.36, 0.45
+    bcdf6d5f572649c0595ed24068102e03d3fb34e6
+
+:100644 100644 2a576fd... 155cccd... M	nemu/nemu
+
+commit 9a9ba3eeb1f1b092b9f470d147bfb246b0ccfee3
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 05:26:28 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:26:28 up 1 day,  4:16,  1 user,  load average: 0.06, 0.37, 0.46
+    cc08c6625bcc70377dcf3304d5a03e67746ba309
+
+:100644 100644 997e8dd... 6bf1f0a... M	nemu/include/cpu/instr/xor.h
+:100644 100644 c7ccb0f... 7ff326c... M	nemu/src/cpu/decode/opcode.c
+:100644 100644 3f31778... 76e0072... M	nemu/src/cpu/instr/xor.c
+
+commit 2f91587a745bef03b6498b2d649f215270288c36
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 05:18:35 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:18:35 up 1 day,  4:09,  1 user,  load average: 0.31, 0.65, 0.52
+    10e9560b531583ff8f147b920c1b43c321d873b
+
+:100644 100644 7fb2816... 2a576fd... M	nemu/nemu
+
+commit a04466565e513d70061b18704ae515edca0e7fb7
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 05:18:32 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:18:32 up 1 day,  4:08,  1 user,  load average: 0.31, 0.65, 0.52
+    f57c20d276888ed4ac6b3127327ac683c06f7e3a
+
+:100644 100644 608f951... d6fc310... M	nemu/include/cpu/instr/or.h
+:100644 100644 2f43557... c7ccb0f... M	nemu/src/cpu/decode/opcode.c
+:100644 100644 2004a22... 940bfbb... M	nemu/src/cpu/instr/or.c
+
+commit c8667e9ca8366e68259af4b34a974b7f05c3b7d4
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 00:50:47 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     00:50:47 up 23:51,  1 user,  load average: 0.82, 0.84, 0.59
+    62caceb94f9c6338ee2aae92bf81f5677f3cade8
+
+:100644 100644 1749fd2... e26a27a... M	kernel/kernel
+:100644 100644 223a07b... 45dcc15... M	kernel/kernel.img
+
+commit b82ca4bf533b64142e1653e1e40e6b7545f74489
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 00:50:44 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     00:50:44 up 23:51,  1 user,  load average: 0.89, 0.85, 0.60
+    22149227df8700b437a8850857630ab84aca2ed5
+
+:100644 100644 36f892f... 26ed552... M	kernel/src/fs/fs.c
+
+commit 05cc66622307740f04130dcda48f70dcde2e7b3e
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 00:44:23 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     00:44:23 up 23:44,  1 user,  load average: 0.92, 0.55, 0.39
+    4994a8dd438eca90de56e7a9efd20626a1c263a1
+
+:000000 100644 0000000... fe371f0... A	game/game
+:000000 100644 0000000... 1749fd2... A	kernel/kernel
+:000000 100644 0000000... 223a07b... A	kernel/kernel.img
+:000000 100644 0000000... 7fb2816... A	nemu/nemu
+:000000 100644 0000000... 6a2d4fe... A	testcase/src/add
+:000000 100644 0000000... 79e3c36... A	testcase/src/add-longlong
+:000000 100644 0000000... d481d4f... A	testcase/src/bit
+:000000 100644 0000000... 6cdbb04... A	testcase/src/bubble-sort
+:000000 100644 0000000... 76dea3a... A	testcase/src/echo
+:000000 100644 0000000... 8fa217c... A	testcase/src/fact
+:000000 100644 0000000... 51552fc... A	testcase/src/fib
+:000000 100644 0000000... eb40fa0... A	testcase/src/gotbaha
+:000000 100644 0000000... 95bd180... A	testcase/src/hello-inline
+:000000 100644 0000000... 83655a3... A	testcase/src/hello-str
+:000000 100644 0000000... 0c88f21... A	testcase/src/if-else
+:000000 100644 0000000... 26106bb... A	testcase/src/leap-year
+:000000 100644 0000000... 8fccad2... A	testcase/src/matrix-mul
+:000000 100644 0000000... 3352057... A	testcase/src/matrix-mul-small
+:000000 100644 0000000... 46f56c1... A	testcase/src/max
+:000000 100644 0000000... 4f153cd... A	testcase/src/min3
+:000000 100644 0000000... 62d73f1... A	testcase/src/mov
+:000000 100644 0000000... b83d9cd... A	testcase/src/mov-c
+:000000 100644 0000000... 94c252c... A	testcase/src/mov-cmp
+:000000 100644 0000000... c5b5741... A	testcase/src/mov-jcc
+:000000 100644 0000000... 885d5dc... A	testcase/src/movsx
+:000000 100644 0000000... 6aecd7b... A	testcase/src/mul-longlong
+:000000 100644 0000000... 5f5a5b9... A	testcase/src/pascal
+:000000 100644 0000000... 40efb03... A	testcase/src/prime
+:000000 100644 0000000... 686d795... A	testcase/src/quick-sort
+:000000 100644 0000000... 3301832... A	testcase/src/select-sort
+:000000 100644 0000000... 68196ca... A	testcase/src/shuixianhua
+:000000 100644 0000000... b7c4529... A	testcase/src/string
+:000000 100644 0000000... 578403a... A	testcase/src/struct
+:000000 100644 0000000... aeff859... A	testcase/src/sub-longlong
+:000000 100644 0000000... 598db70... A	testcase/src/sum
+:000000 100644 0000000... d07dd68... A	testcase/src/test-float
+:000000 100644 0000000... ab2398e... A	testcase/src/wanshu
+
+commit c3991bd63e8c6bd3afe4b119c9bf85b1285c5823
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 00:43:44 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     00:43:44 up 23:44,  1 user,  load average: 0.51, 0.43, 0.35
+    dacfc05a4db99499200dd27adf0799763f1023c9
+
+:100644 000000 4edb19b... 0000000... D	game/game
+:100644 100644 7d2b23c... b65ef34... M	game/src/nemu-pal/hal/video.c
+:100644 000000 1749fd2... 0000000... D	kernel/kernel
+:100644 000000 223a07b... 0000000... D	kernel/kernel.img
+:100644 000000 2af3c3c... 0000000... D	nemu/nemu
+:100644 000000 6a2d4fe... 0000000... D	testcase/src/add
+:100644 000000 79e3c36... 0000000... D	testcase/src/add-longlong
+:100644 000000 d481d4f... 0000000... D	testcase/src/bit
+:100644 000000 6cdbb04... 0000000... D	testcase/src/bubble-sort
+:100644 000000 76dea3a... 0000000... D	testcase/src/echo
+:100644 000000 8fa217c... 0000000... D	testcase/src/fact
+:100644 000000 51552fc... 0000000... D	testcase/src/fib
+:100644 000000 eb40fa0... 0000000... D	testcase/src/gotbaha
+:100644 000000 95bd180... 0000000... D	testcase/src/hello-inline
+:100644 000000 83655a3... 0000000... D	testcase/src/hello-str
+:100644 000000 0c88f21... 0000000... D	testcase/src/if-else
+:100644 000000 26106bb... 0000000... D	testcase/src/leap-year
+:100644 000000 8fccad2... 0000000... D	testcase/src/matrix-mul
+:100644 000000 3352057... 0000000... D	testcase/src/matrix-mul-small
+:100644 000000 46f56c1... 0000000... D	testcase/src/max
+:100644 000000 4f153cd... 0000000... D	testcase/src/min3
+:100644 000000 62d73f1... 0000000... D	testcase/src/mov
+:100644 000000 b83d9cd... 0000000... D	testcase/src/mov-c
+:100644 000000 94c252c... 0000000... D	testcase/src/mov-cmp
+:100644 000000 c5b5741... 0000000... D	testcase/src/mov-jcc
+:100644 000000 885d5dc... 0000000... D	testcase/src/movsx
+:100644 000000 6aecd7b... 0000000... D	testcase/src/mul-longlong
+:100644 000000 5f5a5b9... 0000000... D	testcase/src/pascal
+:100644 000000 40efb03... 0000000... D	testcase/src/prime
+:100644 000000 686d795... 0000000... D	testcase/src/quick-sort
+:100644 000000 3301832... 0000000... D	testcase/src/select-sort
+:100644 000000 68196ca... 0000000... D	testcase/src/shuixianhua
+:100644 000000 b7c4529... 0000000... D	testcase/src/string
+:100644 000000 578403a... 0000000... D	testcase/src/struct
+:100644 000000 aeff859... 0000000... D	testcase/src/sub-longlong
+:100644 000000 598db70... 0000000... D	testcase/src/sum
+:100644 000000 d07dd68... 0000000... D	testcase/src/test-float
+:100644 000000 ab2398e... 0000000... D	testcase/src/wanshu
+
+commit b13a0645c5b1f7eb8496f21f64d1e8f9c2b0b21e
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 00:40:06 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     00:40:05 up 23:40,  1 user,  load average: 0.15, 0.06, 0.21
+    598ad615422e41f068ebe6bc85bd6f26850bec48
+
+:100644 100644 c8cfe58... 4edb19b... M	game/game
+
+commit 76994cda82e72cf7ba44973fcb83fdc1d018eb65
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Sat Jan 27 00:40:00 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     00:40:00 up 23:40,  1 user,  load average: 0.07, 0.04, 0.21
+    c721f80811011c2f9cfe8a2dc744a56d562e649c
+
+:100644 100644 6339911... 7d2b23c... M	game/src/nemu-pal/hal/video.c
+
+commit b171f580aba1ddcded4619055ade7ba068aefd57
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 23:56:50 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     23:56:50 up 22:57,  1 user,  load average: 0.07, 0.06, 0.16
+    b08704c9a57ba9c1e919d4828bc9a5c11b7a3415
+
+:100644 100644 29fd907... 6339911... M	game/src/nemu-pal/hal/video.c
+
+commit 598418cbd1b8d925a09fde903df78ba3bd5ee51e
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 23:56:28 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     23:56:28 up 22:56,  1 user,  load average: 0.00, 0.04, 0.16
+    1f4f7e095d58301c9b75bb1a82ca68b72b0cf645
+
+:100644 100644 6339911... 29fd907... M	game/src/nemu-pal/hal/video.c
+
+commit 27bcde8f3accf05fcddf73f16db3dc74d3ea9f77
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 23:21:43 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     23:21:43 up 22:22,  1 user,  load average: 0.64, 0.21, 0.21
+    7911ccef6bef9ff149a8fe36d7156f82e58a491b
+
+:100644 100644 2d620f2... 2af3c3c... M	nemu/nemu
+
+commit ba5806e700b11f1837f5f5fc69c3e24e7ee575c2
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 23:21:40 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     23:21:40 up 22:22,  1 user,  load average: 0.64, 0.21, 0.21
+    d33e1f169f7f36afeaf9314b7f0b40493ea77a21
+
+:100644 100644 759999b... b5ff07f... M	nemu/src/cpu/instr/out.c
+
+commit 52121b27cbbeeb28f34a664378bfeea50d2b5fab
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 08:28:19 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     08:28:19 up 21:30,  1 user,  load average: 0.74, 0.80, 0.45
+    7e3362f35b8dee0d8115d1e8488775ffa11c04bb
+
+:100644 100644 3562f3b... c8cfe58... M	game/game
+
+commit 3e2b3317e328ff0750f1a67e1835545518c754eb
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 08:28:12 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     08:28:12 up 21:30,  1 user,  load average: 0.63, 0.78, 0.44
+    b64bbc27bbab38aa5cb7f5a5498df9465bd8687
+
+:100644 100644 170572b... 6339911... M	game/src/nemu-pal/hal/video.c
+
+commit 30d7cd1a9d5ac2aaad729819bd6bb644c0b404a7
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 06:11:10 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     06:11:10 up 19:13,  1 user,  load average: 0.10, 0.43, 0.65
+    8ac5e306a4ce8ae1a040c16180a297a826968c35
+
+:100644 100644 169494a... 2d620f2... M	nemu/nemu
+
+commit 5f497bfbf17114458c1d9b6a99dac9ced4d5b7de
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 06:11:07 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     06:11:07 up 19:13,  1 user,  load average: 0.02, 0.42, 0.65
+    e15716c9d0647f7412b30dfd2eae019dd28f8ab4
+
+:100644 100644 e09ce1f... 608f951... M	nemu/include/cpu/instr/or.h
+:100644 100644 0547826... 2f43557... M	nemu/src/cpu/decode/opcode.c
+:100644 100644 c085030... 2004a22... M	nemu/src/cpu/instr/or.c
+
+commit acace6ac926e1b20d39c7f1d6a8e8fef2543cc75
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 05:54:12 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:54:12 up 18:56,  1 user,  load average: 0.18, 0.35, 0.58
+    86248035aed3668fb711a6806924f6bb74fb2d30
+
+:100644 100644 6d785bf... 169494a... M	nemu/nemu
+
+commit 90c597d6d4af304ebb602f084ab2dfbb359de0a7
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 05:54:08 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:54:08 up 18:56,  1 user,  load average: 0.18, 0.35, 0.58
+    afc063d9865a748e344b60c12dc81b76baf42864
+
+:100644 100644 05d59a8... afad46b... M	nemu/include/cpu/instr/sbb.h
+:100644 100644 b0c78d0... 0547826... M	nemu/src/cpu/decode/opcode.c
+:100644 100644 294f087... f8efdd0... M	nemu/src/cpu/instr/sbb.c
+
+commit 7d490882f01788d1c93d0b9c85b50b8e2cb92a13
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 05:34:25 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:34:25 up 18:36,  1 user,  load average: 0.21, 0.28, 0.55
+    c8d490ee9dc8195e980ebac6c4534a6526f55134
+
+:100644 100644 5290b26... 6d785bf... M	nemu/nemu
+
+commit bb5452afe8878362f59649722eb3ac0de091312f
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 05:34:22 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:34:22 up 18:36,  1 user,  load average: 0.21, 0.28, 0.55
+    fac22081daee52b03c09afe1ebe438bcaf1435e
+
+:100644 100644 b7daba0... 048a2d8... M	nemu/include/cpu/instr/and.h
+:100644 100644 737e51c... b0c78d0... M	nemu/src/cpu/decode/opcode.c
+:100644 100644 90f70c4... 6e6a9a9... M	nemu/src/cpu/instr/and.c
+
+commit c2b18eabb5290b343291926e94c18f5edb46300c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 05:14:46 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:14:46 up 18:16,  1 user,  load average: 1.29, 1.18, 0.80
+    f681e9484774f2791bacecca416ebf106015ef5e
+
+:100644 100644 cf2efc2... 3562f3b... M	game/game
+
+commit 66dbaac4c7412b866c8abd1e7ec6d6f71a3ba810
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 05:14:39 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:14:39 up 18:16,  1 user,  load average: 1.34, 1.19, 0.79
+    de4994afe01696556457bbe8798d261c3dd449e
+
+:100644 100644 5881904... 740e727... M	game/src/nemu-pal/main.c
+
+commit 39545d351c22570f716bc91389aacdd426978995
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 05:02:51 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:02:51 up 18:05,  1 user,  load average: 0.14, 0.40, 0.30
+    715c95004602de14c92df3faa1f8ba7a5ae58bbc
+
+:100644 100644 84cf037... cf2efc2... M	game/game
+
+commit 9b663bfe9860de4ae5b7d5e140cb3bc96f792e5e
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 05:02:45 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:02:45 up 18:04,  1 user,  load average: 0.07, 0.39, 0.29
+    2bf2e7273e148552f2bd9ab4c651e01711fc4b
+
+:100644 100644 63721e2... 170572b... M	game/src/nemu-pal/hal/video.c
+:100644 100644 ae04b10... 5881904... M	game/src/nemu-pal/main.c
+
+commit 2fa3cefa2c7c4003a0e63a10c2d1139cc96e0cab
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 04:58:48 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     04:58:48 up 18:01,  1 user,  load average: 0.79, 0.64, 0.31
+    eb46a81d319fb93dabf7cf6e18f3d3a728ca1ded
+
+:100644 100644 47ec09e... 84cf037... M	game/game
+
+commit c86c4beb92e2524f2f2298b0846ebd8fc0ff21ae
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 04:58:42 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     04:58:42 up 18:00,  1 user,  load average: 0.86, 0.65, 0.31
+    f960aac4da080fdb729498e46678443992a1507b
+
+:100644 100644 5881904... ae04b10... M	game/src/nemu-pal/main.c
+
+commit 5bbf8667fdf45c2bad477548a7250f7b82881abd
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 03:17:39 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     03:17:39 up 16:30,  1 user,  load average: 0.29, 0.38, 0.35
+    909d9a49c0ed2206520ec095b21093b1c58cbc4
+
+:000000 100644 0000000... 47ec09e... A	game/game
+
+commit af6d1a4ec91d709c85bc8636c9a655d3468d8cb9
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 02:41:53 2018 -0500
+
+    >  testkernel
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     02:41:53 up 15:54,  1 user,  load average: 0.60, 0.16, 0.05
+    b19b957df68fc792a37f67928cb43de175ec948f
+
+:000000 100644 0000000... 1749fd2... A	kernel/kernel
+:000000 100644 0000000... 223a07b... A	kernel/kernel.img
+:000000 100644 0000000... 5290b26... A	nemu/nemu
+:000000 100644 0000000... 6a2d4fe... A	testcase/src/add
+:000000 100644 0000000... 79e3c36... A	testcase/src/add-longlong
+:000000 100644 0000000... d481d4f... A	testcase/src/bit
+:000000 100644 0000000... 6cdbb04... A	testcase/src/bubble-sort
+:000000 100644 0000000... 76dea3a... A	testcase/src/echo
+:000000 100644 0000000... 8fa217c... A	testcase/src/fact
+:000000 100644 0000000... 51552fc... A	testcase/src/fib
+:000000 100644 0000000... eb40fa0... A	testcase/src/gotbaha
+:000000 100644 0000000... 95bd180... A	testcase/src/hello-inline
+:000000 100644 0000000... 83655a3... A	testcase/src/hello-str
+:000000 100644 0000000... 0c88f21... A	testcase/src/if-else
+:000000 100644 0000000... 26106bb... A	testcase/src/leap-year
+:000000 100644 0000000... 8fccad2... A	testcase/src/matrix-mul
+:000000 100644 0000000... 3352057... A	testcase/src/matrix-mul-small
+:000000 100644 0000000... 46f56c1... A	testcase/src/max
+:000000 100644 0000000... 4f153cd... A	testcase/src/min3
+:000000 100644 0000000... 62d73f1... A	testcase/src/mov
+:000000 100644 0000000... b83d9cd... A	testcase/src/mov-c
+:000000 100644 0000000... 94c252c... A	testcase/src/mov-cmp
+:000000 100644 0000000... c5b5741... A	testcase/src/mov-jcc
+:000000 100644 0000000... 885d5dc... A	testcase/src/movsx
+:000000 100644 0000000... 6aecd7b... A	testcase/src/mul-longlong
+:000000 100644 0000000... 5f5a5b9... A	testcase/src/pascal
+:000000 100644 0000000... 40efb03... A	testcase/src/prime
+:000000 100644 0000000... 686d795... A	testcase/src/quick-sort
+:000000 100644 0000000... 3301832... A	testcase/src/select-sort
+:000000 100644 0000000... 68196ca... A	testcase/src/shuixianhua
+:000000 100644 0000000... b7c4529... A	testcase/src/string
+:000000 100644 0000000... 578403a... A	testcase/src/struct
+:000000 100644 0000000... aeff859... A	testcase/src/sub-longlong
+:000000 100644 0000000... 598db70... A	testcase/src/sum
+:000000 100644 0000000... d07dd68... A	testcase/src/test-float
+:000000 100644 0000000... ab2398e... A	testcase/src/wanshu
+
+commit e55c98f73a2eba87c77544905b1af41653629687
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 02:41:24 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     02:41:24 up 15:54,  1 user,  load average: 0.00, 0.01, 0.00
+    ec0c25f2102f62ab31223d82e695a457ccd2f9d6
+
+:100644 000000 47ec09e... 0000000... D	game/game
+:100644 000000 1749fd2... 0000000... D	kernel/kernel
+:100644 000000 223a07b... 0000000... D	kernel/kernel.img
+:100644 000000 5290b26... 0000000... D	nemu/nemu
+:100644 000000 6a2d4fe... 0000000... D	testcase/src/add
+:100644 000000 79e3c36... 0000000... D	testcase/src/add-longlong
+:100644 000000 d481d4f... 0000000... D	testcase/src/bit
+:100644 000000 6cdbb04... 0000000... D	testcase/src/bubble-sort
+:100644 000000 76dea3a... 0000000... D	testcase/src/echo
+:100644 000000 8fa217c... 0000000... D	testcase/src/fact
+:100644 000000 51552fc... 0000000... D	testcase/src/fib
+:100644 000000 eb40fa0... 0000000... D	testcase/src/gotbaha
+:100644 000000 95bd180... 0000000... D	testcase/src/hello-inline
+:100644 000000 83655a3... 0000000... D	testcase/src/hello-str
+:100644 000000 0c88f21... 0000000... D	testcase/src/if-else
+:100644 000000 26106bb... 0000000... D	testcase/src/leap-year
+:100644 000000 8fccad2... 0000000... D	testcase/src/matrix-mul
+:100644 000000 3352057... 0000000... D	testcase/src/matrix-mul-small
+:100644 000000 46f56c1... 0000000... D	testcase/src/max
+:100644 000000 4f153cd... 0000000... D	testcase/src/min3
+:100644 000000 62d73f1... 0000000... D	testcase/src/mov
+:100644 000000 b83d9cd... 0000000... D	testcase/src/mov-c
+:100644 000000 94c252c... 0000000... D	testcase/src/mov-cmp
+:100644 000000 c5b5741... 0000000... D	testcase/src/mov-jcc
+:100644 000000 885d5dc... 0000000... D	testcase/src/movsx
+:100644 000000 6aecd7b... 0000000... D	testcase/src/mul-longlong
+:100644 000000 5f5a5b9... 0000000... D	testcase/src/pascal
+:100644 000000 40efb03... 0000000... D	testcase/src/prime
+:100644 000000 686d795... 0000000... D	testcase/src/quick-sort
+:100644 000000 3301832... 0000000... D	testcase/src/select-sort
+:100644 000000 68196ca... 0000000... D	testcase/src/shuixianhua
+:100644 000000 b7c4529... 0000000... D	testcase/src/string
+:100644 000000 578403a... 0000000... D	testcase/src/struct
+:100644 000000 aeff859... 0000000... D	testcase/src/sub-longlong
+:100644 000000 598db70... 0000000... D	testcase/src/sum
+:100644 000000 d07dd68... 0000000... D	testcase/src/test-float
+:100644 000000 ab2398e... 0000000... D	testcase/src/wanshu
+
+commit dd941758586befe504393d5eab733a90fd9f2892
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 01:10:37 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     01:10:37 up 14:23,  1 user,  load average: 1.52, 1.20, 1.00
+    e0007d677758d2cb3ee16c68a3407b2a9dae3dd
+
+:100644 100644 d1ce793... 47ec09e... M	game/game
+
+commit 41c07dbd8a7a6f472e6e7f04fdd61e092ef67a84
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 01:10:31 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     01:10:31 up 14:23,  1 user,  load average: 1.62, 1.20, 1.01
+    e54c8423833185a279eaeb0b241c6444a3857b32
+
+:100644 100644 b65ef34... 63721e2... M	game/src/nemu-pal/hal/video.c
+
+commit 3d00c7320135196e6e289c65fce7284b4ba253e2
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 01:03:54 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     01:03:54 up 14:16,  1 user,  load average: 1.09, 0.91, 0.86
+    200cfbd050ec9043da9de8142b634a3414880ac9
+
+:000000 100644 0000000... d1ce793... A	game/game
+:000000 100644 0000000... 1749fd2... A	kernel/kernel
+:000000 100644 0000000... 223a07b... A	kernel/kernel.img
+:000000 100644 0000000... 5290b26... A	nemu/nemu
+:000000 100644 0000000... 6a2d4fe... A	testcase/src/add
+:000000 100644 0000000... 79e3c36... A	testcase/src/add-longlong
+:000000 100644 0000000... d481d4f... A	testcase/src/bit
+:000000 100644 0000000... 6cdbb04... A	testcase/src/bubble-sort
+:000000 100644 0000000... 76dea3a... A	testcase/src/echo
+:000000 100644 0000000... 8fa217c... A	testcase/src/fact
+:000000 100644 0000000... 51552fc... A	testcase/src/fib
+:000000 100644 0000000... eb40fa0... A	testcase/src/gotbaha
+:000000 100644 0000000... 95bd180... A	testcase/src/hello-inline
+:000000 100644 0000000... 83655a3... A	testcase/src/hello-str
+:000000 100644 0000000... 0c88f21... A	testcase/src/if-else
+:000000 100644 0000000... 26106bb... A	testcase/src/leap-year
+:000000 100644 0000000... 8fccad2... A	testcase/src/matrix-mul
+:000000 100644 0000000... 3352057... A	testcase/src/matrix-mul-small
+:000000 100644 0000000... 46f56c1... A	testcase/src/max
+:000000 100644 0000000... 4f153cd... A	testcase/src/min3
+:000000 100644 0000000... 62d73f1... A	testcase/src/mov
+:000000 100644 0000000... b83d9cd... A	testcase/src/mov-c
+:000000 100644 0000000... 94c252c... A	testcase/src/mov-cmp
+:000000 100644 0000000... c5b5741... A	testcase/src/mov-jcc
+:000000 100644 0000000... 885d5dc... A	testcase/src/movsx
+:000000 100644 0000000... 6aecd7b... A	testcase/src/mul-longlong
+:000000 100644 0000000... 5f5a5b9... A	testcase/src/pascal
+:000000 100644 0000000... 40efb03... A	testcase/src/prime
+:000000 100644 0000000... 686d795... A	testcase/src/quick-sort
+:000000 100644 0000000... 3301832... A	testcase/src/select-sort
+:000000 100644 0000000... 68196ca... A	testcase/src/shuixianhua
+:000000 100644 0000000... b7c4529... A	testcase/src/string
+:000000 100644 0000000... 578403a... A	testcase/src/struct
+:000000 100644 0000000... aeff859... A	testcase/src/sub-longlong
+:000000 100644 0000000... 598db70... A	testcase/src/sum
+:000000 100644 0000000... d07dd68... A	testcase/src/test-float
+:000000 100644 0000000... ab2398e... A	testcase/src/wanshu
+
+commit b4bfa6f09daad584f6359c4a233c7b4806995a46
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 01:03:06 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     01:03:06 up 14:16,  1 user,  load average: 0.41, 0.77, 0.82
+    136a65d41661364ed42133c879193034140ff175
+
+:100644 000000 2b97c62... 0000000... D	game/game
+:100644 100644 af76c1d... b65ef34... M	game/src/nemu-pal/hal/video.c
+:100644 000000 1749fd2... 0000000... D	kernel/kernel
+:100644 000000 223a07b... 0000000... D	kernel/kernel.img
+:100644 000000 5290b26... 0000000... D	nemu/nemu
+:100644 000000 6a2d4fe... 0000000... D	testcase/src/add
+:100644 000000 79e3c36... 0000000... D	testcase/src/add-longlong
+:100644 000000 d481d4f... 0000000... D	testcase/src/bit
+:100644 000000 6cdbb04... 0000000... D	testcase/src/bubble-sort
+:100644 000000 76dea3a... 0000000... D	testcase/src/echo
+:100644 000000 8fa217c... 0000000... D	testcase/src/fact
+:100644 000000 51552fc... 0000000... D	testcase/src/fib
+:100644 000000 eb40fa0... 0000000... D	testcase/src/gotbaha
+:100644 000000 95bd180... 0000000... D	testcase/src/hello-inline
+:100644 000000 83655a3... 0000000... D	testcase/src/hello-str
+:100644 000000 0c88f21... 0000000... D	testcase/src/if-else
+:100644 000000 26106bb... 0000000... D	testcase/src/leap-year
+:100644 000000 8fccad2... 0000000... D	testcase/src/matrix-mul
+:100644 000000 3352057... 0000000... D	testcase/src/matrix-mul-small
+:100644 000000 46f56c1... 0000000... D	testcase/src/max
+:100644 000000 4f153cd... 0000000... D	testcase/src/min3
+:100644 000000 62d73f1... 0000000... D	testcase/src/mov
+:100644 000000 b83d9cd... 0000000... D	testcase/src/mov-c
+:100644 000000 94c252c... 0000000... D	testcase/src/mov-cmp
+:100644 000000 c5b5741... 0000000... D	testcase/src/mov-jcc
+:100644 000000 885d5dc... 0000000... D	testcase/src/movsx
+:100644 000000 6aecd7b... 0000000... D	testcase/src/mul-longlong
+:100644 000000 5f5a5b9... 0000000... D	testcase/src/pascal
+:100644 000000 40efb03... 0000000... D	testcase/src/prime
+:100644 000000 686d795... 0000000... D	testcase/src/quick-sort
+:100644 000000 3301832... 0000000... D	testcase/src/select-sort
+:100644 000000 68196ca... 0000000... D	testcase/src/shuixianhua
+:100644 000000 b7c4529... 0000000... D	testcase/src/string
+:100644 000000 578403a... 0000000... D	testcase/src/struct
+:100644 000000 aeff859... 0000000... D	testcase/src/sub-longlong
+:100644 000000 598db70... 0000000... D	testcase/src/sum
+:100644 000000 d07dd68... 0000000... D	testcase/src/test-float
+:100644 000000 ab2398e... 0000000... D	testcase/src/wanshu
+
+commit c80f78cc9283db5af218edc6c38cf93ba43cdcb8
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 00:20:45 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     00:20:45 up 13:33,  1 user,  load average: 0.52, 0.80, 0.75
+    b7ec9d772e5b8643e9d9d406ed10b9aade92fd25
+
+:100644 100644 eb1c347... 2b97c62... M	game/game
+
+commit fb9fe69116e5573cc095179f68f9668c41a5e753
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Fri Jan 26 00:20:40 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     00:20:39 up 13:33,  1 user,  load average: 0.47, 0.80, 0.75
+    737f0fc563bb02d34fbb61005db9d461bd4dd0af
+
+:100644 100644 c1e66af... af76c1d... M	game/src/nemu-pal/hal/video.c
+
+commit 8e7aed22e0a2736003a2ea47aa9456b14bf0d547
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 23:58:17 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     23:58:17 up 13:11,  1 user,  load average: 0.34, 0.13, 0.04
+    b6aa7edf5f1aadab41759c30790f5b0c8d05a66
+
+:100644 100644 64e5833... eb1c347... M	game/game
+
+commit a9a12b9c065cdd00b1bce2863f83020abd2e824a
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 23:58:12 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     23:58:12 up 13:11,  1 user,  load average: 0.28, 0.11, 0.03
+    a397e44df4abe44ebc66fdfdb5e4e1b8e084055d
+
+:100644 100644 eeaed14... c1e66af... M	game/src/nemu-pal/hal/video.c
+
+commit cced6622399444252dc5de24cd963cd256c192be
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 22:09:53 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     22:09:53 up 11:22,  1 user,  load average: 0.32, 0.24, 0.22
+    1e106b2b604418e75b1a4db164926a6f4b466ebf
+
+:100644 100644 6c45407... 64e5833... M	game/game
+
+commit 9c6d0c7d426acc40a9d4c283b84f0dfe7cbca0c2
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 22:09:47 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     22:09:47 up 11:22,  1 user,  load average: 0.20, 0.22, 0.21
+    e9e5eab135ae25915e62f2ebdb8ba2fdc4461b4e
+
+:100644 100644 9ee6c29... 5881904... M	game/src/nemu-pal/main.c
+
+commit d6c5583eee262cc7738b01a577987307d94e94f3
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 22:05:32 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     22:05:32 up 11:18,  1 user,  load average: 0.10, 0.14, 0.19
+    2c1e5f926f0a5ede8b3b0be232a3ff6db66c202
+
+:100644 100644 98ebbb0... 6c45407... M	game/game
+
+commit 081c8234b09a9e57ab9d4c722d89a542d2778102
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 22:05:26 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     22:05:26 up 11:18,  1 user,  load average: 0.02, 0.13, 0.18
+    77b5af7fd31d8a816fe9dc866ccee041d6e25581
+
+:100644 100644 2207368... 40c4ed2... M	game/src/nemu-pal/hal/keyboard.c
+
+commit 0c136dbce5a47ede462bb190203b53de2147425f
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 21:56:56 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     21:56:56 up 11:09,  1 user,  load average: 0.11, 0.27, 0.23
+    beee0a84a87d22ec51fb8d4f0687acec5a20f8c
+
+:100644 100644 c846c12... 1749fd2... M	kernel/kernel
+:100644 100644 a194c18... 223a07b... M	kernel/kernel.img
+
+commit 5349d3423702877496cc9d47664a99506e69adfe
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 21:56:54 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     21:56:54 up 11:09,  1 user,  load average: 0.11, 0.27, 0.23
+    bb83580cf3754a3d1dfb1c374a874ea99f5d0314
+
+:100644 100644 1fd956c... 36f892f... M	kernel/src/fs/fs.c
+
+commit a9da3ba5beae8a8eb820243d2da4dd46f1713373
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 21:51:42 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     21:51:42 up 11:04,  1 user,  load average: 1.02, 0.49, 0.25
+    782039f85043f1aba66c27cc73d14eb36dbad3b8
+
+:000000 100644 0000000... 98ebbb0... A	game/game
+:000000 100644 0000000... c846c12... A	kernel/kernel
+:000000 100644 0000000... a194c18... A	kernel/kernel.img
+:000000 100644 0000000... 5290b26... A	nemu/nemu
+:000000 100644 0000000... 6a2d4fe... A	testcase/src/add
+:000000 100644 0000000... 79e3c36... A	testcase/src/add-longlong
+:000000 100644 0000000... d481d4f... A	testcase/src/bit
+:000000 100644 0000000... 6cdbb04... A	testcase/src/bubble-sort
+:000000 100644 0000000... 76dea3a... A	testcase/src/echo
+:000000 100644 0000000... 8fa217c... A	testcase/src/fact
+:000000 100644 0000000... 51552fc... A	testcase/src/fib
+:000000 100644 0000000... eb40fa0... A	testcase/src/gotbaha
+:000000 100644 0000000... 95bd180... A	testcase/src/hello-inline
+:000000 100644 0000000... 83655a3... A	testcase/src/hello-str
+:000000 100644 0000000... 0c88f21... A	testcase/src/if-else
+:000000 100644 0000000... 26106bb... A	testcase/src/leap-year
+:000000 100644 0000000... 8fccad2... A	testcase/src/matrix-mul
+:000000 100644 0000000... 3352057... A	testcase/src/matrix-mul-small
+:000000 100644 0000000... 46f56c1... A	testcase/src/max
+:000000 100644 0000000... 4f153cd... A	testcase/src/min3
+:000000 100644 0000000... 62d73f1... A	testcase/src/mov
+:000000 100644 0000000... b83d9cd... A	testcase/src/mov-c
+:000000 100644 0000000... 94c252c... A	testcase/src/mov-cmp
+:000000 100644 0000000... c5b5741... A	testcase/src/mov-jcc
+:000000 100644 0000000... 885d5dc... A	testcase/src/movsx
+:000000 100644 0000000... 6aecd7b... A	testcase/src/mul-longlong
+:000000 100644 0000000... 5f5a5b9... A	testcase/src/pascal
+:000000 100644 0000000... 40efb03... A	testcase/src/prime
+:000000 100644 0000000... 686d795... A	testcase/src/quick-sort
+:000000 100644 0000000... 3301832... A	testcase/src/select-sort
+:000000 100644 0000000... 68196ca... A	testcase/src/shuixianhua
+:000000 100644 0000000... b7c4529... A	testcase/src/string
+:000000 100644 0000000... 578403a... A	testcase/src/struct
+:000000 100644 0000000... aeff859... A	testcase/src/sub-longlong
+:000000 100644 0000000... 598db70... A	testcase/src/sum
+:000000 100644 0000000... d07dd68... A	testcase/src/test-float
+:000000 100644 0000000... ab2398e... A	testcase/src/wanshu
+
+commit cbf628ff4e2238c51662e6a7b3165a692776eecb
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 21:51:05 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     21:51:04 up 11:04,  1 user,  load average: 0.72, 0.38, 0.20
+    cceb4417e8e3d5c3bb240394a3bb5fd56b6a2a8
+
+:100644 000000 98ebbb0... 0000000... D	game/game
+:100644 000000 c846c12... 0000000... D	kernel/kernel
+:100644 000000 a194c18... 0000000... D	kernel/kernel.img
+:100644 000000 5290b26... 0000000... D	nemu/nemu
+:100644 000000 6a2d4fe... 0000000... D	testcase/src/add
+:100644 000000 79e3c36... 0000000... D	testcase/src/add-longlong
+:100644 000000 d481d4f... 0000000... D	testcase/src/bit
+:100644 000000 6cdbb04... 0000000... D	testcase/src/bubble-sort
+:100644 000000 76dea3a... 0000000... D	testcase/src/echo
+:100644 000000 8fa217c... 0000000... D	testcase/src/fact
+:100644 000000 51552fc... 0000000... D	testcase/src/fib
+:100644 000000 eb40fa0... 0000000... D	testcase/src/gotbaha
+:100644 000000 95bd180... 0000000... D	testcase/src/hello-inline
+:100644 000000 83655a3... 0000000... D	testcase/src/hello-str
+:100644 000000 0c88f21... 0000000... D	testcase/src/if-else
+:100644 000000 26106bb... 0000000... D	testcase/src/leap-year
+:100644 000000 8fccad2... 0000000... D	testcase/src/matrix-mul
+:100644 000000 3352057... 0000000... D	testcase/src/matrix-mul-small
+:100644 000000 46f56c1... 0000000... D	testcase/src/max
+:100644 000000 4f153cd... 0000000... D	testcase/src/min3
+:100644 000000 62d73f1... 0000000... D	testcase/src/mov
+:100644 000000 b83d9cd... 0000000... D	testcase/src/mov-c
+:100644 000000 94c252c... 0000000... D	testcase/src/mov-cmp
+:100644 000000 c5b5741... 0000000... D	testcase/src/mov-jcc
+:100644 000000 885d5dc... 0000000... D	testcase/src/movsx
+:100644 000000 6aecd7b... 0000000... D	testcase/src/mul-longlong
+:100644 000000 5f5a5b9... 0000000... D	testcase/src/pascal
+:100644 000000 40efb03... 0000000... D	testcase/src/prime
+:100644 000000 686d795... 0000000... D	testcase/src/quick-sort
+:100644 000000 3301832... 0000000... D	testcase/src/select-sort
+:100644 000000 68196ca... 0000000... D	testcase/src/shuixianhua
+:100644 000000 b7c4529... 0000000... D	testcase/src/string
+:100644 000000 578403a... 0000000... D	testcase/src/struct
+:100644 000000 aeff859... 0000000... D	testcase/src/sub-longlong
+:100644 000000 598db70... 0000000... D	testcase/src/sum
+:100644 000000 d07dd68... 0000000... D	testcase/src/test-float
+:100644 000000 ab2398e... 0000000... D	testcase/src/wanshu
+
+commit eaf8ecd177b16af18b91dd23718c75bd4fb8ad20
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 21:48:37 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     21:48:37 up 11:01,  1 user,  load average: 0.22, 0.12, 0.10
+    b9c683df3dba53bfb44f03a0de67aa9f40cb2f85
+
+:100644 100644 dfa8417... 98ebbb0... M	game/game
+
+commit 5b47566383fcc30e0c3a75c2d01b16890f5eff52
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 21:48:32 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     21:48:32 up 11:01,  1 user,  load average: 0.24, 0.12, 0.10
+    fba2da49e19c15324be2b028c238d9e2e6a37f
+
+:100644 100644 9f71d51... eeaed14... M	game/src/nemu-pal/hal/video.c
+
+commit 2fd8c2b1def2f51931384f5113c213bdcc115c30
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 21:11:57 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     21:11:57 up 10:24,  1 user,  load average: 1.40, 0.42, 0.25
+    4a30f55c83dcf9dcea953c44c4a5e1c8d83ff7bd
+
+:000000 100644 0000000... dfa8417... A	game/game
+:000000 100644 0000000... c846c12... A	kernel/kernel
+:000000 100644 0000000... a194c18... A	kernel/kernel.img
+:000000 100644 0000000... 5290b26... A	nemu/nemu
+:000000 100644 0000000... 6a2d4fe... A	testcase/src/add
+:000000 100644 0000000... 79e3c36... A	testcase/src/add-longlong
+:000000 100644 0000000... d481d4f... A	testcase/src/bit
+:000000 100644 0000000... 6cdbb04... A	testcase/src/bubble-sort
+:000000 100644 0000000... 76dea3a... A	testcase/src/echo
+:000000 100644 0000000... 8fa217c... A	testcase/src/fact
+:000000 100644 0000000... 51552fc... A	testcase/src/fib
+:000000 100644 0000000... eb40fa0... A	testcase/src/gotbaha
+:000000 100644 0000000... 95bd180... A	testcase/src/hello-inline
+:000000 100644 0000000... 83655a3... A	testcase/src/hello-str
+:000000 100644 0000000... 0c88f21... A	testcase/src/if-else
+:000000 100644 0000000... 26106bb... A	testcase/src/leap-year
+:000000 100644 0000000... 8fccad2... A	testcase/src/matrix-mul
+:000000 100644 0000000... 3352057... A	testcase/src/matrix-mul-small
+:000000 100644 0000000... 46f56c1... A	testcase/src/max
+:000000 100644 0000000... 4f153cd... A	testcase/src/min3
+:000000 100644 0000000... 62d73f1... A	testcase/src/mov
+:000000 100644 0000000... b83d9cd... A	testcase/src/mov-c
+:000000 100644 0000000... 94c252c... A	testcase/src/mov-cmp
+:000000 100644 0000000... c5b5741... A	testcase/src/mov-jcc
+:000000 100644 0000000... 885d5dc... A	testcase/src/movsx
+:000000 100644 0000000... 6aecd7b... A	testcase/src/mul-longlong
+:000000 100644 0000000... 5f5a5b9... A	testcase/src/pascal
+:000000 100644 0000000... 40efb03... A	testcase/src/prime
+:000000 100644 0000000... 686d795... A	testcase/src/quick-sort
+:000000 100644 0000000... 3301832... A	testcase/src/select-sort
+:000000 100644 0000000... 68196ca... A	testcase/src/shuixianhua
+:000000 100644 0000000... b7c4529... A	testcase/src/string
+:000000 100644 0000000... 578403a... A	testcase/src/struct
+:000000 100644 0000000... aeff859... A	testcase/src/sub-longlong
+:000000 100644 0000000... 598db70... A	testcase/src/sum
+:000000 100644 0000000... d07dd68... A	testcase/src/test-float
+:000000 100644 0000000... ab2398e... A	testcase/src/wanshu
+
+commit 12c7f0a0adaaeb23b4d169086b23c072e18aa18e
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 21:11:21 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     21:11:21 up 10:24,  1 user,  load average: 0.00, 0.09, 0.14
+    9fe24cc4405279d5d108d2558bb54ab0877910e0
+
+:100644 000000 dfa8417... 0000000... D	game/game
+:100644 000000 c846c12... 0000000... D	kernel/kernel
+:100644 000000 a194c18... 0000000... D	kernel/kernel.img
+:100644 000000 4a9c875... 0000000... D	nemu/nemu
+:100644 000000 6a2d4fe... 0000000... D	testcase/src/add
+:100644 000000 79e3c36... 0000000... D	testcase/src/add-longlong
+:100644 000000 d481d4f... 0000000... D	testcase/src/bit
+:100644 000000 6cdbb04... 0000000... D	testcase/src/bubble-sort
+:100644 000000 76dea3a... 0000000... D	testcase/src/echo
+:100644 000000 8fa217c... 0000000... D	testcase/src/fact
+:100644 000000 51552fc... 0000000... D	testcase/src/fib
+:100644 000000 eb40fa0... 0000000... D	testcase/src/gotbaha
+:100644 000000 95bd180... 0000000... D	testcase/src/hello-inline
+:100644 000000 83655a3... 0000000... D	testcase/src/hello-str
+:100644 000000 0c88f21... 0000000... D	testcase/src/if-else
+:100644 000000 26106bb... 0000000... D	testcase/src/leap-year
+:100644 000000 8fccad2... 0000000... D	testcase/src/matrix-mul
+:100644 000000 3352057... 0000000... D	testcase/src/matrix-mul-small
+:100644 000000 46f56c1... 0000000... D	testcase/src/max
+:100644 000000 4f153cd... 0000000... D	testcase/src/min3
+:100644 000000 62d73f1... 0000000... D	testcase/src/mov
+:100644 000000 b83d9cd... 0000000... D	testcase/src/mov-c
+:100644 000000 94c252c... 0000000... D	testcase/src/mov-cmp
+:100644 000000 c5b5741... 0000000... D	testcase/src/mov-jcc
+:100644 000000 885d5dc... 0000000... D	testcase/src/movsx
+:100644 000000 6aecd7b... 0000000... D	testcase/src/mul-longlong
+:100644 000000 5f5a5b9... 0000000... D	testcase/src/pascal
+:100644 000000 40efb03... 0000000... D	testcase/src/prime
+:100644 000000 686d795... 0000000... D	testcase/src/quick-sort
+:100644 000000 3301832... 0000000... D	testcase/src/select-sort
+:100644 000000 68196ca... 0000000... D	testcase/src/shuixianhua
+:100644 000000 b7c4529... 0000000... D	testcase/src/string
+:100644 000000 578403a... 0000000... D	testcase/src/struct
+:100644 000000 aeff859... 0000000... D	testcase/src/sub-longlong
+:100644 000000 598db70... 0000000... D	testcase/src/sum
+:100644 000000 d07dd68... 0000000... D	testcase/src/test-float
+:100644 000000 ab2398e... 0000000... D	testcase/src/wanshu
+
+commit e2bcd9a2dee3533449890f47dfe55e1cc0b4e597
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 12:42:23 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     12:42:23 up 10:11,  1 user,  load average: 0.28, 0.19, 0.09
+    ef517c30c1abaacbf2d899e67736f4f98ef97b5e
+
+:100644 100644 9816dbd... 4a9c875... M	nemu/nemu
+
+commit 77beb0ca5b3493971ce4b3b6375ac5da1ba04e57
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 12:42:20 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     12:42:20 up 10:11,  1 user,  load average: 0.28, 0.19, 0.09
+    7ce5d3a991238514746814a96ccf83d2ff58629a
+
+:100644 100644 6be7157... ad94f10... M	nemu/include/cpu/instr/jcc.h
+:100644 100644 037e0fd... 737e51c... M	nemu/src/cpu/decode/opcode.c
+
+commit 141846e83f1ad3f8ea3758a1f22ae261814d6faf
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 12:37:39 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     12:37:38 up 10:06,  1 user,  load average: 0.34, 0.14, 0.05
+    d2a554404ebd6668120fd598f2ec4994b9f4523
+
+:100644 100644 7b75404... c846c12... M	kernel/kernel
+:100644 100644 3f916ad... a194c18... M	kernel/kernel.img
+
+commit 392cf67bf9eac85c8963d88eaed988d82a42e1f1
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 12:37:35 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     12:37:35 up 10:06,  1 user,  load average: 0.37, 0.14, 0.05
+    9d6669c1514ef2f3a739216eb7faeb39dacdda1d
+
+:100644 100644 ed6d076... 1fd956c... M	kernel/src/fs/fs.c
+
+commit 994c64e7e39e208d45c6941d58d1afcd5252c209
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 11:20:06 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     11:20:06 up  8:49,  1 user,  load average: 1.03, 0.40, 0.15
+    c6ffaa914550170059090ce7b6233365ea7fbcdf
+
+:000000 100644 0000000... dfa8417... A	game/game
+:000000 100644 0000000... 7b75404... A	kernel/kernel
+:000000 100644 0000000... 3f916ad... A	kernel/kernel.img
+:000000 100644 0000000... 9816dbd... A	nemu/nemu
+:000000 100644 0000000... 6a2d4fe... A	testcase/src/add
+:000000 100644 0000000... 79e3c36... A	testcase/src/add-longlong
+:000000 100644 0000000... d481d4f... A	testcase/src/bit
+:000000 100644 0000000... 6cdbb04... A	testcase/src/bubble-sort
+:000000 100644 0000000... 76dea3a... A	testcase/src/echo
+:000000 100644 0000000... 8fa217c... A	testcase/src/fact
+:000000 100644 0000000... 51552fc... A	testcase/src/fib
+:000000 100644 0000000... eb40fa0... A	testcase/src/gotbaha
+:000000 100644 0000000... 95bd180... A	testcase/src/hello-inline
+:000000 100644 0000000... 83655a3... A	testcase/src/hello-str
+:000000 100644 0000000... 0c88f21... A	testcase/src/if-else
+:000000 100644 0000000... 26106bb... A	testcase/src/leap-year
+:000000 100644 0000000... 8fccad2... A	testcase/src/matrix-mul
+:000000 100644 0000000... 3352057... A	testcase/src/matrix-mul-small
+:000000 100644 0000000... 46f56c1... A	testcase/src/max
+:000000 100644 0000000... 4f153cd... A	testcase/src/min3
+:000000 100644 0000000... 62d73f1... A	testcase/src/mov
+:000000 100644 0000000... b83d9cd... A	testcase/src/mov-c
+:000000 100644 0000000... 94c252c... A	testcase/src/mov-cmp
+:000000 100644 0000000... c5b5741... A	testcase/src/mov-jcc
+:000000 100644 0000000... 885d5dc... A	testcase/src/movsx
+:000000 100644 0000000... 6aecd7b... A	testcase/src/mul-longlong
+:000000 100644 0000000... 5f5a5b9... A	testcase/src/pascal
+:000000 100644 0000000... 40efb03... A	testcase/src/prime
+:000000 100644 0000000... 686d795... A	testcase/src/quick-sort
+:000000 100644 0000000... 3301832... A	testcase/src/select-sort
+:000000 100644 0000000... 68196ca... A	testcase/src/shuixianhua
+:000000 100644 0000000... b7c4529... A	testcase/src/string
+:000000 100644 0000000... 578403a... A	testcase/src/struct
+:000000 100644 0000000... aeff859... A	testcase/src/sub-longlong
+:000000 100644 0000000... 598db70... A	testcase/src/sum
+:000000 100644 0000000... d07dd68... A	testcase/src/test-float
+:000000 100644 0000000... ab2398e... A	testcase/src/wanshu
+
+commit fc9e9a191360ab65fd8e28c5a60934e2de2ae391
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 11:19:29 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     11:19:29 up  8:48,  1 user,  load average: 0.51, 0.24, 0.09
+    86f1f740d4bea1a9593c34525cbd24f7c8f53b6b
+
+:100644 000000 dfa8417... 0000000... D	game/game
+:100644 000000 7b75404... 0000000... D	kernel/kernel
+:100644 000000 3f916ad... 0000000... D	kernel/kernel.img
+:100644 000000 9816dbd... 0000000... D	nemu/nemu
+:100644 000000 6a2d4fe... 0000000... D	testcase/src/add
+:100644 000000 79e3c36... 0000000... D	testcase/src/add-longlong
+:100644 000000 d481d4f... 0000000... D	testcase/src/bit
+:100644 000000 6cdbb04... 0000000... D	testcase/src/bubble-sort
+:100644 000000 76dea3a... 0000000... D	testcase/src/echo
+:100644 000000 8fa217c... 0000000... D	testcase/src/fact
+:100644 000000 51552fc... 0000000... D	testcase/src/fib
+:100644 000000 eb40fa0... 0000000... D	testcase/src/gotbaha
+:100644 000000 95bd180... 0000000... D	testcase/src/hello-inline
+:100644 000000 83655a3... 0000000... D	testcase/src/hello-str
+:100644 000000 0c88f21... 0000000... D	testcase/src/if-else
+:100644 000000 26106bb... 0000000... D	testcase/src/leap-year
+:100644 000000 8fccad2... 0000000... D	testcase/src/matrix-mul
+:100644 000000 3352057... 0000000... D	testcase/src/matrix-mul-small
+:100644 000000 46f56c1... 0000000... D	testcase/src/max
+:100644 000000 4f153cd... 0000000... D	testcase/src/min3
+:100644 000000 62d73f1... 0000000... D	testcase/src/mov
+:100644 000000 b83d9cd... 0000000... D	testcase/src/mov-c
+:100644 000000 94c252c... 0000000... D	testcase/src/mov-cmp
+:100644 000000 c5b5741... 0000000... D	testcase/src/mov-jcc
+:100644 000000 885d5dc... 0000000... D	testcase/src/movsx
+:100644 000000 6aecd7b... 0000000... D	testcase/src/mul-longlong
+:100644 000000 5f5a5b9... 0000000... D	testcase/src/pascal
+:100644 000000 40efb03... 0000000... D	testcase/src/prime
+:100644 000000 686d795... 0000000... D	testcase/src/quick-sort
+:100644 000000 3301832... 0000000... D	testcase/src/select-sort
+:100644 000000 68196ca... 0000000... D	testcase/src/shuixianhua
+:100644 000000 b7c4529... 0000000... D	testcase/src/string
+:100644 000000 578403a... 0000000... D	testcase/src/struct
+:100644 000000 aeff859... 0000000... D	testcase/src/sub-longlong
+:100644 000000 598db70... 0000000... D	testcase/src/sum
+:100644 000000 d07dd68... 0000000... D	testcase/src/test-float
+:100644 000000 ab2398e... 0000000... D	testcase/src/wanshu
+
+commit 59be802bd37c22dc5dcfbf2ca6ca139106fabf89
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 11:18:47 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     11:18:47 up  8:48,  1 user,  load average: 0.60, 0.20, 0.07
+    ed187710cd789d3c7bdcd1ca40e4357592a55fa
+
+:000000 100644 0000000... dfa8417... A	game/game
+
+commit e52579c14fb89bc4552eaf33a7f30c8ef6678991
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 11:18:35 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     11:18:35 up  8:47,  1 user,  load average: 0.39, 0.14, 0.05
+    2fc5a67bd939007ae67d290f673a3dab8034c6b3
+
+:100644 100644 dab8f86... 9f71d51... M	game/src/nemu-pal/hal/video.c
+
+commit c20562afb9ab2abf5bc31310b9ff13ac8bd7e98c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 07:46:51 2018 -0500
+
+    >  testkernel
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     07:46:51 up  5:40,  1 user,  load average: 0.73, 0.46, 0.25
+    dba75d69efc924bc997bdd232b0c2da23fe9a242
+
+:100644 100644 941288d... 7b75404... M	kernel/kernel
+:100644 100644 6e1d12a... 3f916ad... M	kernel/kernel.img
+
+commit c8019d25e737c6b003bce7d3ff81251b7efdd178
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 07:46:48 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     07:46:48 up  5:40,  1 user,  load average: 0.73, 0.46, 0.25
+    cf24df78ce0896e3a06d5beb61eedfef47e1fb64
+
+:100644 100644 f756bf3... 63e886e... M	kernel/src/memory/vmem.c
+
+commit 5e66414cabeae108fe039a0a2591667cfa40785c
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 07:45:32 2018 -0500
+
+    >  testkernel
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     07:45:32 up  5:39,  1 user,  load average: 0.75, 0.38, 0.21
+    cabf77f797e5df88c93e31152384cebd1fdba9b6
+
+:100644 100644 100c3fc... 941288d... M	kernel/kernel
+:100644 100644 edb40e2... 6e1d12a... M	kernel/kernel.img
+
+commit 0210ad3faa0f9dc302216c197607aa854720c26d
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 07:45:30 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     07:45:29 up  5:39,  1 user,  load average: 0.73, 0.37, 0.20
+    e8aca1951c16ff3b23412ddf92f9b9cff7e6fdfd
+
+:100644 100644 1f8604c... f756bf3... M	kernel/src/memory/vmem.c
+
+commit beef07d351addcf1b210c91ac8b847e5c4bdd91e
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 07:44:29 2018 -0500
+
+    >  testkernel
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     07:44:29 up  5:38,  1 user,  load average: 0.21, 0.21, 0.14
+    5f06d707c415427e49f2298252c5c55bb506a966
+
+:100644 100644 a4e5140... 100c3fc... M	kernel/kernel
+:100644 100644 70a2628... edb40e2... M	kernel/kernel.img
+
+commit ef5a8da0abcdaec0a685bc424df1069bda6d5466
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 07:44:26 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     07:44:26 up  5:38,  1 user,  load average: 0.21, 0.21, 0.14
+    341013c7e24f243357e1da34d3632756557ea44d
+
+:100644 100644 89950fa... 1f8604c... M	kernel/src/memory/vmem.c
+
+commit 28cda19d0da98d8d220f9f5d96bad3a53ab794b8
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 07:38:22 2018 -0500
+
+    >  testkernel
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     07:38:22 up  5:32,  1 user,  load average: 0.82, 0.36, 0.14
+    850a2ba13179438879a8a86f74b8608d2e64487
+
+:000000 100644 0000000... a4e5140... A	kernel/kernel
+:000000 100644 0000000... 70a2628... A	kernel/kernel.img
+:000000 100644 0000000... 9816dbd... A	nemu/nemu
+:000000 100644 0000000... 6a2d4fe... A	testcase/src/add
+:000000 100644 0000000... 79e3c36... A	testcase/src/add-longlong
+:000000 100644 0000000... d481d4f... A	testcase/src/bit
+:000000 100644 0000000... 6cdbb04... A	testcase/src/bubble-sort
+:000000 100644 0000000... 76dea3a... A	testcase/src/echo
+:000000 100644 0000000... 8fa217c... A	testcase/src/fact
+:000000 100644 0000000... 51552fc... A	testcase/src/fib
+:000000 100644 0000000... eb40fa0... A	testcase/src/gotbaha
+:000000 100644 0000000... 95bd180... A	testcase/src/hello-inline
+:000000 100644 0000000... 83655a3... A	testcase/src/hello-str
+:000000 100644 0000000... 0c88f21... A	testcase/src/if-else
+:000000 100644 0000000... 26106bb... A	testcase/src/leap-year
+:000000 100644 0000000... 8fccad2... A	testcase/src/matrix-mul
+:000000 100644 0000000... 3352057... A	testcase/src/matrix-mul-small
+:000000 100644 0000000... 46f56c1... A	testcase/src/max
+:000000 100644 0000000... 4f153cd... A	testcase/src/min3
+:000000 100644 0000000... 62d73f1... A	testcase/src/mov
+:000000 100644 0000000... b83d9cd... A	testcase/src/mov-c
+:000000 100644 0000000... 94c252c... A	testcase/src/mov-cmp
+:000000 100644 0000000... c5b5741... A	testcase/src/mov-jcc
+:000000 100644 0000000... 885d5dc... A	testcase/src/movsx
+:000000 100644 0000000... 6aecd7b... A	testcase/src/mul-longlong
+:000000 100644 0000000... 5f5a5b9... A	testcase/src/pascal
+:000000 100644 0000000... 40efb03... A	testcase/src/prime
+:000000 100644 0000000... 686d795... A	testcase/src/quick-sort
+:000000 100644 0000000... 3301832... A	testcase/src/select-sort
+:000000 100644 0000000... 68196ca... A	testcase/src/shuixianhua
+:000000 100644 0000000... b7c4529... A	testcase/src/string
+:000000 100644 0000000... 578403a... A	testcase/src/struct
+:000000 100644 0000000... aeff859... A	testcase/src/sub-longlong
+:000000 100644 0000000... 598db70... A	testcase/src/sum
+:000000 100644 0000000... d07dd68... A	testcase/src/test-float
+:000000 100644 0000000... ab2398e... A	testcase/src/wanshu
+
+commit 317fe27c3c58284da1ea8f42c5fa750973f57ac7
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 07:37:52 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     07:37:51 up  5:31,  1 user,  load average: 0.53, 0.27, 0.10
+    e0cdaecfb275766673299e5cb846957e2d31ae00
+
+:100644 000000 e03067e... 0000000... D	game/game
+:100644 000000 a4e5140... 0000000... D	kernel/kernel
+:100644 000000 70a2628... 0000000... D	kernel/kernel.img
+:100644 000000 9816dbd... 0000000... D	nemu/nemu
+:100644 000000 6a2d4fe... 0000000... D	testcase/src/add
+:100644 000000 79e3c36... 0000000... D	testcase/src/add-longlong
+:100644 000000 d481d4f... 0000000... D	testcase/src/bit
+:100644 000000 6cdbb04... 0000000... D	testcase/src/bubble-sort
+:100644 000000 76dea3a... 0000000... D	testcase/src/echo
+:100644 000000 8fa217c... 0000000... D	testcase/src/fact
+:100644 000000 51552fc... 0000000... D	testcase/src/fib
+:100644 000000 eb40fa0... 0000000... D	testcase/src/gotbaha
+:100644 000000 95bd180... 0000000... D	testcase/src/hello-inline
+:100644 000000 83655a3... 0000000... D	testcase/src/hello-str
+:100644 000000 0c88f21... 0000000... D	testcase/src/if-else
+:100644 000000 26106bb... 0000000... D	testcase/src/leap-year
+:100644 000000 8fccad2... 0000000... D	testcase/src/matrix-mul
+:100644 000000 3352057... 0000000... D	testcase/src/matrix-mul-small
+:100644 000000 46f56c1... 0000000... D	testcase/src/max
+:100644 000000 4f153cd... 0000000... D	testcase/src/min3
+:100644 000000 62d73f1... 0000000... D	testcase/src/mov
+:100644 000000 b83d9cd... 0000000... D	testcase/src/mov-c
+:100644 000000 94c252c... 0000000... D	testcase/src/mov-cmp
+:100644 000000 c5b5741... 0000000... D	testcase/src/mov-jcc
+:100644 000000 885d5dc... 0000000... D	testcase/src/movsx
+:100644 000000 6aecd7b... 0000000... D	testcase/src/mul-longlong
+:100644 000000 5f5a5b9... 0000000... D	testcase/src/pascal
+:100644 000000 40efb03... 0000000... D	testcase/src/prime
+:100644 000000 686d795... 0000000... D	testcase/src/quick-sort
+:100644 000000 3301832... 0000000... D	testcase/src/select-sort
+:100644 000000 68196ca... 0000000... D	testcase/src/shuixianhua
+:100644 000000 b7c4529... 0000000... D	testcase/src/string
+:100644 000000 578403a... 0000000... D	testcase/src/struct
+:100644 000000 aeff859... 0000000... D	testcase/src/sub-longlong
+:100644 000000 598db70... 0000000... D	testcase/src/sum
+:100644 000000 d07dd68... 0000000... D	testcase/src/test-float
+:100644 000000 ab2398e... 0000000... D	testcase/src/wanshu
+
+commit c6aa3d4666014803556e1b759799c8f8dd2ba5b9
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 07:35:17 2018 -0500
+
+    >  testkernel
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     07:35:17 up  5:29,  1 user,  load average: 0.02, 0.02, 0.00
+    b9cda64c54be2b65cb112e23753e24096b79c8f
+
+:100644 100644 54af9d0... a4e5140... M	kernel/kernel
+:100644 100644 570b734... 70a2628... M	kernel/kernel.img
+
+commit c475ecf2b952bd615a3734f08342560cf18b24d0
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 07:35:14 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     07:35:14 up  5:29,  1 user,  load average: 0.02, 0.02, 0.00
+    f9d1a6ddad882d6d213128819833b1e714d1ace0
+
+:100644 100644 479d7c8... 2207368... M	game/src/nemu-pal/hal/keyboard.c
+:100644 100644 f872ead... 89950fa... M	kernel/src/memory/vmem.c
+
+commit a27f03222a2cd7259a7c730eced23262cc2a2b54
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 05:54:34 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:54:33 up  3:48,  1 user,  load average: 1.47, 0.74, 0.48
+    adae2df59ff24092b49a1565152afa13f59a6da1
+
+:000000 100644 0000000... e03067e... A	game/game
+:000000 100644 0000000... 54af9d0... A	kernel/kernel
+:000000 100644 0000000... 570b734... A	kernel/kernel.img
+:000000 100644 0000000... 9816dbd... A	nemu/nemu
+:000000 100644 0000000... 6a2d4fe... A	testcase/src/add
+:000000 100644 0000000... 79e3c36... A	testcase/src/add-longlong
+:000000 100644 0000000... d481d4f... A	testcase/src/bit
+:000000 100644 0000000... 6cdbb04... A	testcase/src/bubble-sort
+:000000 100644 0000000... 76dea3a... A	testcase/src/echo
+:000000 100644 0000000... 8fa217c... A	testcase/src/fact
+:000000 100644 0000000... 51552fc... A	testcase/src/fib
+:000000 100644 0000000... eb40fa0... A	testcase/src/gotbaha
+:000000 100644 0000000... 95bd180... A	testcase/src/hello-inline
+:000000 100644 0000000... 83655a3... A	testcase/src/hello-str
+:000000 100644 0000000... 0c88f21... A	testcase/src/if-else
+:000000 100644 0000000... 26106bb... A	testcase/src/leap-year
+:000000 100644 0000000... 8fccad2... A	testcase/src/matrix-mul
+:000000 100644 0000000... 3352057... A	testcase/src/matrix-mul-small
+:000000 100644 0000000... 46f56c1... A	testcase/src/max
+:000000 100644 0000000... 4f153cd... A	testcase/src/min3
+:000000 100644 0000000... 62d73f1... A	testcase/src/mov
+:000000 100644 0000000... b83d9cd... A	testcase/src/mov-c
+:000000 100644 0000000... 94c252c... A	testcase/src/mov-cmp
+:000000 100644 0000000... c5b5741... A	testcase/src/mov-jcc
+:000000 100644 0000000... 885d5dc... A	testcase/src/movsx
+:000000 100644 0000000... 6aecd7b... A	testcase/src/mul-longlong
+:000000 100644 0000000... 5f5a5b9... A	testcase/src/pascal
+:000000 100644 0000000... 40efb03... A	testcase/src/prime
+:000000 100644 0000000... 686d795... A	testcase/src/quick-sort
+:000000 100644 0000000... 3301832... A	testcase/src/select-sort
+:000000 100644 0000000... 68196ca... A	testcase/src/shuixianhua
+:000000 100644 0000000... b7c4529... A	testcase/src/string
+:000000 100644 0000000... 578403a... A	testcase/src/struct
+:000000 100644 0000000... aeff859... A	testcase/src/sub-longlong
+:000000 100644 0000000... 598db70... A	testcase/src/sum
+:000000 100644 0000000... d07dd68... A	testcase/src/test-float
+:000000 100644 0000000... ab2398e... A	testcase/src/wanshu
+
+commit 839f82a968f5293f447d666ab5a67e936dc75f46
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 05:53:51 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:53:50 up  3:47,  1 user,  load average: 0.69, 0.51, 0.39
+    87419fd850dbdef01858c5c8856ee5fb196fedc2
+
+:100644 100644 0a21c77... 59619dc... M	game/Makefile
+:100644 000000 08460a0... 0000000... D	game/game
+:100644 000000 54af9d0... 0000000... D	kernel/kernel
+:100644 000000 570b734... 0000000... D	kernel/kernel.img
+:100644 000000 9816dbd... 0000000... D	nemu/nemu
+:100644 000000 6a2d4fe... 0000000... D	testcase/src/add
+:100644 000000 79e3c36... 0000000... D	testcase/src/add-longlong
+:100644 000000 d481d4f... 0000000... D	testcase/src/bit
+:100644 000000 6cdbb04... 0000000... D	testcase/src/bubble-sort
+:100644 000000 76dea3a... 0000000... D	testcase/src/echo
+:100644 000000 8fa217c... 0000000... D	testcase/src/fact
+:100644 000000 51552fc... 0000000... D	testcase/src/fib
+:100644 000000 eb40fa0... 0000000... D	testcase/src/gotbaha
+:100644 000000 95bd180... 0000000... D	testcase/src/hello-inline
+:100644 000000 83655a3... 0000000... D	testcase/src/hello-str
+:100644 000000 0c88f21... 0000000... D	testcase/src/if-else
+:100644 000000 26106bb... 0000000... D	testcase/src/leap-year
+:100644 000000 8fccad2... 0000000... D	testcase/src/matrix-mul
+:100644 000000 3352057... 0000000... D	testcase/src/matrix-mul-small
+:100644 000000 46f56c1... 0000000... D	testcase/src/max
+:100644 000000 4f153cd... 0000000... D	testcase/src/min3
+:100644 000000 62d73f1... 0000000... D	testcase/src/mov
+:100644 000000 b83d9cd... 0000000... D	testcase/src/mov-c
+:100644 000000 94c252c... 0000000... D	testcase/src/mov-cmp
+:100644 000000 c5b5741... 0000000... D	testcase/src/mov-jcc
+:100644 000000 885d5dc... 0000000... D	testcase/src/movsx
+:100644 000000 6aecd7b... 0000000... D	testcase/src/mul-longlong
+:100644 000000 5f5a5b9... 0000000... D	testcase/src/pascal
+:100644 000000 40efb03... 0000000... D	testcase/src/prime
+:100644 000000 686d795... 0000000... D	testcase/src/quick-sort
+:100644 000000 3301832... 0000000... D	testcase/src/select-sort
+:100644 000000 68196ca... 0000000... D	testcase/src/shuixianhua
+:100644 000000 b7c4529... 0000000... D	testcase/src/string
+:100644 000000 578403a... 0000000... D	testcase/src/struct
+:100644 000000 aeff859... 0000000... D	testcase/src/sub-longlong
+:100644 000000 598db70... 0000000... D	testcase/src/sum
+:100644 000000 d07dd68... 0000000... D	testcase/src/test-float
+:100644 000000 ab2398e... 0000000... D	testcase/src/wanshu
+
+commit 28d1ed1f77d7ce17cef7e916fcb9755ad0ab8a5e
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 05:52:51 2018 -0500
+
+    >  testgame
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:52:51 up  3:46,  1 user,  load average: 0.58, 0.42, 0.36
+    2888ae3f4a833047851bf721629dcee4288f6117
+
+:000000 100644 0000000... 08460a0... A	game/game
+
+commit 8ae205c79fb3f226935a5da853b6cc76741ee2e4
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 05:51:27 2018 -0500
+
+    >  testkernel
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:51:27 up  3:45,  1 user,  load average: 0.83, 0.37, 0.33
+    46b73985c08c59dbdb1ea403e8cec16192268e0b
+
+:000000 100644 0000000... 54af9d0... A	kernel/kernel
+:000000 100644 0000000... 570b734... A	kernel/kernel.img
+:000000 100644 0000000... 9816dbd... A	nemu/nemu
+:000000 100644 0000000... 6a2d4fe... A	testcase/src/add
+:000000 100644 0000000... 79e3c36... A	testcase/src/add-longlong
+:000000 100644 0000000... d481d4f... A	testcase/src/bit
+:000000 100644 0000000... 6cdbb04... A	testcase/src/bubble-sort
+:000000 100644 0000000... 76dea3a... A	testcase/src/echo
+:000000 100644 0000000... 8fa217c... A	testcase/src/fact
+:000000 100644 0000000... 51552fc... A	testcase/src/fib
+:000000 100644 0000000... eb40fa0... A	testcase/src/gotbaha
+:000000 100644 0000000... 95bd180... A	testcase/src/hello-inline
+:000000 100644 0000000... 83655a3... A	testcase/src/hello-str
+:000000 100644 0000000... 0c88f21... A	testcase/src/if-else
+:000000 100644 0000000... 26106bb... A	testcase/src/leap-year
+:000000 100644 0000000... 8fccad2... A	testcase/src/matrix-mul
+:000000 100644 0000000... 3352057... A	testcase/src/matrix-mul-small
+:000000 100644 0000000... 46f56c1... A	testcase/src/max
+:000000 100644 0000000... 4f153cd... A	testcase/src/min3
+:000000 100644 0000000... 62d73f1... A	testcase/src/mov
+:000000 100644 0000000... b83d9cd... A	testcase/src/mov-c
+:000000 100644 0000000... 94c252c... A	testcase/src/mov-cmp
+:000000 100644 0000000... c5b5741... A	testcase/src/mov-jcc
+:000000 100644 0000000... 885d5dc... A	testcase/src/movsx
+:000000 100644 0000000... 6aecd7b... A	testcase/src/mul-longlong
+:000000 100644 0000000... 5f5a5b9... A	testcase/src/pascal
+:000000 100644 0000000... 40efb03... A	testcase/src/prime
+:000000 100644 0000000... 686d795... A	testcase/src/quick-sort
+:000000 100644 0000000... 3301832... A	testcase/src/select-sort
+:000000 100644 0000000... 68196ca... A	testcase/src/shuixianhua
+:000000 100644 0000000... b7c4529... A	testcase/src/string
+:000000 100644 0000000... 578403a... A	testcase/src/struct
+:000000 100644 0000000... aeff859... A	testcase/src/sub-longlong
+:000000 100644 0000000... 598db70... A	testcase/src/sum
+:000000 100644 0000000... d07dd68... A	testcase/src/test-float
+:000000 100644 0000000... ab2398e... A	testcase/src/wanshu
+
+commit 05f4faebd02bba3945f29f20c491576ad9c87cc6
+Author: tracer-pa2017 <tracer@njuics.org>
+Date:   Thu Jan 25 05:50:58 2018 -0500
+
+    >  nemu
+    161220017
+    chen
+    Linux debian 4.9.0-3-686-pae #1 SMP Debian 4.9.30-2+deb9u5 (2017-09-19) i686 GNU/Linux
+     05:50:57 up  3:44,  1 user,  load average: 0.20, 0.22, 0.28
+    f93adc6ebfee7992e55d8778fec74b9965d960
+
+:000000 100644 0000000... cb05b34... A	.gitignore
+:000000 100644 0000000... 5839750... A	Makefile
+:000000 100644 0000000... c304ee4... A	Makefile.git
+:000000 100644 0000000... 7108fb9... A	"PA4\345\256\236\351\252\214\346\212\245\345\221\212.docx"
+:000000 100644 0000000... 43822f3... A	README.md
+:000000 100644 0000000... 0a21c77... A	game/Makefile
+:000000 100644 0000000... 6ea95af... A	game/include/adt/linklist.h
+:000000 100644 0000000... 4147828... A	game/include/common.h
+:000000 100644 0000000... 1bda1c8... A	game/include/debug.h
+:000000 100644 0000000... e5f06e0... A	game/include/device/palette.h
+:000000 100644 0000000... 0692471... A	game/include/device/video.h
+:000000 100644 0000000... f40ddb5... A	game/include/game-common.h
+:000000 100644 0000000... 7f4d88d... A	game/include/x86.h
+:000000 100644 0000000... 124ed40... A	game/src/common/device/font.c
+:000000 100644 0000000... f49eec2... A	game/src/common/device/palette.c
+:000000 100644 0000000... 4000130... A	game/src/common/device/timer.c
+:000000 100644 0000000... 3792166... A	game/src/common/device/video.c
+:000000 100644 0000000... 679a477... A	game/src/common/lib/syscall.c
+:000000 100644 0000000... 4e42562... A	game/src/common/main.c
+:000000 100644 0000000... 2c2f4e7... A	game/src/nemu-pal/CREDITS.txt
+:000000 100644 0000000... c0b4590... A	game/src/nemu-pal/README.txt
+:000000 100644 0000000... 6320a63... A	game/src/nemu-pal/battle/battle.c
+:000000 100644 0000000... d2c8a2b... A	game/src/nemu-pal/battle/fight.c
+:000000 100644 0000000... f072ca5... A	game/src/nemu-pal/device/input.c
+:000000 100644 0000000... e40df16... A	game/src/nemu-pal/device/palette.c
+:000000 100644 0000000... fb09233... A	game/src/nemu-pal/device/video.c
+:000000 100644 0000000... 01a9804... A	game/src/nemu-pal/game/game.c
+:000000 100644 0000000... bbfd063... A	game/src/nemu-pal/game/play.c
+:000000 100644 0000000... 30980b9... A	game/src/nemu-pal/game/script.c
+:000000 100644 0000000... 0e90c87... A	game/src/nemu-pal/global/global.c
+:000000 100644 0000000... ffa3320... A	game/src/nemu-pal/global/palcommon.c
+:000000 100644 0000000... f85d723... A	game/src/nemu-pal/global/res.c
+:000000 100644 0000000... fc393b0... A	game/src/nemu-pal/gpl.txt
+:000000 100644 0000000... 479d7c8... A	game/src/nemu-pal/hal/keyboard.c
+:000000 100644 0000000... de3badd... A	game/src/nemu-pal/hal/timer.c
+:000000 100644 0000000... dab8f86... A	game/src/nemu-pal/hal/video.c
+:000000 100644 0000000... 57ccd40... A	game/src/nemu-pal/include/_common.h
+:000000 100644 0000000... d6885d5... A	game/src/nemu-pal/include/ascii.h
+:000000 100644 0000000... 8daa24b... A	game/src/nemu-pal/include/battle.h
+:000000 100644 0000000... 3439f21... A	game/src/nemu-pal/include/big5font.h
+:000000 100644 0000000... ef1f6c7... A	game/src/nemu-pal/include/ending.h
+:000000 100644 0000000... 163b329... A	game/src/nemu-pal/include/fight.h
+:000000 100644 0000000... ea310e8... A	game/src/nemu-pal/include/font.h
+:000000 100644 0000000... 736f1f4... A	game/src/nemu-pal/include/game.h
+:000000 100644 0000000... 9b98ea8... A	game/src/nemu-pal/include/gbfont.h
+:000000 100644 0000000... a4c29c0... A	game/src/nemu-pal/include/getopt.h
+:000000 100644 0000000... d428d58... A	game/src/nemu-pal/include/global.h
+:000000 100644 0000000... 79cdbfb... A	game/src/nemu-pal/include/hal.h
+:000000 100644 0000000... 51a186f... A	game/src/nemu-pal/include/input.h
+:000000 100644 0000000... d60ca44... A	game/src/nemu-pal/include/itemmenu.h
+:000000 100644 0000000... 79072cd... A	game/src/nemu-pal/include/magicmenu.h
+:000000 100644 0000000... f351c1c... A	game/src/nemu-pal/include/main.h
+:000000 100644 0000000... 089afc4... A	game/src/nemu-pal/include/main_PSP.h
+:000000 100644 0000000... 5145e9a... A	game/src/nemu-pal/include/map.h
+:000000 100644 0000000... 071bb1f... A	game/src/nemu-pal/include/midi.h
+:000000 100644 0000000... ce68c01... A	game/src/nemu-pal/include/palcommon.h
+:000000 100644 0000000... b386497... A	game/src/nemu-pal/include/palette.h
+:000000 100644 0000000... b180a35... A	game/src/nemu-pal/include/play.h
+:000000 100644 0000000... f23c5a2... A	game/src/nemu-pal/include/res.h
+:000000 100644 0000000... 2b9fd84... A	game/src/nemu-pal/include/rixplay.h
+:000000 100644 0000000... 420848d... A	game/src/nemu-pal/include/rngplay.h
+:000000 100644 0000000... f6f0f02... A	game/src/nemu-pal/include/scene.h
+:000000 100644 0000000... 06ef5ee... A	game/src/nemu-pal/include/script.h
+:000000 100644 0000000... 5ac5fd9... A	game/src/nemu-pal/include/sound.h
+:000000 100644 0000000... 37928a1... A	game/src/nemu-pal/include/text.h
+:000000 100644 0000000... 9097bc6... A	game/src/nemu-pal/include/ui.h
+:000000 100644 0000000... efc155a... A	game/src/nemu-pal/include/uibattle.h
+:000000 100644 0000000... 6dc6d15... A	game/src/nemu-pal/include/uigame.h
+:000000 100644 0000000... 2b2425f... A	game/src/nemu-pal/include/util.h
+:000000 100644 0000000... 94103ee... A	game/src/nemu-pal/include/video.h
+:000000 100644 0000000... 9ee6c29... A	game/src/nemu-pal/main.c
+:000000 100644 0000000... 10d7185... A	game/src/nemu-pal/misc/ending.c
+:000000 100644 0000000... 07d0217... A	game/src/nemu-pal/misc/rngplay.c
+:000000 100644 0000000... 9ecc354... A	game/src/nemu-pal/misc/util.c
+:000000 100644 0000000... 3dfdba5... A	game/src/nemu-pal/misc/yj1.c
+:000000 100644 0000000... 545eb27... A	game/src/nemu-pal/scene/map.c
+:000000 100644 0000000... cf8c044... A	game/src/nemu-pal/scene/scene.c
+:000000 100644 0000000... 7d9fa95... A	game/src/nemu-pal/ui/font.c
+:000000 100644 0000000... 2164fd6... A	game/src/nemu-pal/ui/itemmenu.c
+:000000 100644 0000000... 282bbe2... A	game/src/nemu-pal/ui/magicmenu.c
+:000000 100644 0000000... c6072cd... A	game/src/nemu-pal/ui/text.c
+:000000 100644 0000000... c90f094... A	game/src/nemu-pal/ui/ui.c
+:000000 100644 0000000... 7eb5fb2... A	game/src/nemu-pal/ui/uibattle.c
+:000000 100644 0000000... fa30835... A	game/src/nemu-pal/ui/uigame.c
+:000000 100644 0000000... 556d696... A	game/src/nemu-pal/unuse/midi.c
+:000000 100644 0000000... be86b79... A	game/src/nemu-pal/unuse/rixplay.c
+:000000 100644 0000000... 6384bcb... A	game/src/nemu-pal/unuse/sdl.c
+:000000 100644 0000000... 30c1dac... A	game/src/nemu-pal/unuse/sound.c
+:000000 100644 0000000... 70d9253... A	game/src/typing/draw.c
+:000000 100644 0000000... 9d05bbc... A	game/src/typing/effect.c
+:000000 100644 0000000... 798d719... A	game/src/typing/game.c
+:000000 100644 0000000... 8f20f1e... A	game/src/typing/include/game.h
+:000000 100644 0000000... bc619d8... A	game/src/typing/keyboard.c
+:000000 100644 0000000... e69de29... A	git_log_pre.txt
+:000000 100644 0000000... 2edc4b5... A	hamster.sh
+:000000 100644 0000000... 11baa54... A	include/config.h
+:000000 100644 0000000... c5597b3... A	include/newlib/include/_ansi.h
+:000000 100644 0000000... 271644e... A	include/newlib/include/_syslist.h
+:000000 100644 0000000... 2ea0fd9... A	include/newlib/include/alloca.h
+:000000 100644 0000000... ac2e4ca... A	include/newlib/include/ar.h
+:000000 100644 0000000... 02c9adb... A	include/newlib/include/argz.h
+:000000 100644 0000000... 91bb040... A	include/newlib/include/assert.h
+:000000 100644 0000000... 969b20e... A	include/newlib/include/complex.h
+:000000 100644 0000000... 56ad5ab... A	include/newlib/include/ctype.h
+:000000 100644 0000000... 6fefc03... A	include/newlib/include/dirent.h
+:000000 100644 0000000... 9bb6a81... A	include/newlib/include/envlock.h
+:000000 100644 0000000... e6a31c3... A	include/newlib/include/envz.h
+:000000 100644 0000000... 7cc2ca8... A	include/newlib/include/errno.h
+:000000 100644 0000000... 95eea5f... A	include/newlib/include/fastmath.h
+:000000 100644 0000000... 86a9167... A	include/newlib/include/fcntl.h
+:000000 100644 0000000... 06311fc... A	include/newlib/include/fnmatch.h
+:000000 100644 0000000... e12d253... A	include/newlib/include/getopt.h
+:000000 100644 0000000... 7a300e6... A	include/newlib/include/glob.h
+:000000 100644 0000000... 1273e39... A	include/newlib/include/grp.h
+:000000 100644 0000000... 4c023e9... A	include/newlib/include/iconv.h
+:000000 100644 0000000... 0b06fb7... A	include/newlib/include/ieeefp.h
+:000000 100644 0000000... 1631e21... A	include/newlib/include/inttypes.h
+:000000 100644 0000000... 9040ade... A	include/newlib/include/langinfo.h
+:000000 100644 0000000... abfab0e... A	include/newlib/include/libgen.h
+:000000 100644 0000000... 190f1f7... A	include/newlib/include/limits.h
+:000000 100644 0000000... cbd658e... A	include/newlib/include/locale.h
+:000000 100644 0000000... 47986d2... A	include/newlib/include/machine/_default_types.h
+:000000 100644 0000000... 18f96d5... A	include/newlib/include/machine/_types.h
+:000000 100644 0000000... 737b6d0... A	include/newlib/include/machine/ansi.h
+:000000 100644 0000000... 07ebc8f... A	include/newlib/include/machine/endian.h
+:000000 100644 0000000... b13befa... A	include/newlib/include/machine/fastmath.h
+:000000 100644 0000000... 042e7f4... A	include/newlib/include/machine/ieeefp.h
+:000000 100644 0000000... fdada9e... A	include/newlib/include/machine/malloc.h
+:000000 100644 0000000... bdf8bf7... A	include/newlib/include/machine/param.h
+:000000 100644 0000000... 6ca5e65... A	include/newlib/include/machine/setjmp-dj.h
+:000000 100644 0000000... 73ccd94... A	include/newlib/include/machine/setjmp.h
+:000000 100644 0000000... fa3f3a1... A	include/newlib/include/machine/stdlib.h
+:000000 100644 0000000... 41fd459... A	include/newlib/include/machine/termios.h
+:000000 100644 0000000... 06e2ccf... A	include/newlib/include/machine/time.h
+:000000 100644 0000000... 40a75fa... A	include/newlib/include/machine/types.h
+:000000 100644 0000000... 41b5efd... A	include/newlib/include/malloc.h
+:000000 100644 0000000... 606fecf... A	include/newlib/include/math.h
+:000000 100644 0000000... d4fffb1... A	include/newlib/include/newlib.h
+:000000 100644 0000000... b1c70f5... A	include/newlib/include/paths.h
+:000000 100644 0000000... 3640da2... A	include/newlib/include/pthread.h
+:000000 100644 0000000... 1526abf... A	include/newlib/include/pwd.h
+:000000 100644 0000000... 861be71... A	include/newlib/include/reent.h
+:000000 100644 0000000... 8cf144b... A	include/newlib/include/regdef.h
+:000000 100644 0000000... fa3e268... A	include/newlib/include/regex.h
+:000000 100644 0000000... df77a93... A	include/newlib/include/rpc/types.h
+:000000 100644 0000000... 4f93bf3... A	include/newlib/include/rpc/xdr.h
+:000000 100644 0000000... a3f58ac... A	include/newlib/include/sched.h
+:000000 100644 0000000... ed321b0... A	include/newlib/include/search.h
+:000000 100644 0000000... c958d90... A	include/newlib/include/setjmp.h
+:000000 100644 0000000... 8c50a2e... A	include/newlib/include/signal.h
+:000000 100644 0000000... 5a6692f... A	include/newlib/include/spawn.h
+:000000 100644 0000000... 09c0cf7... A	include/newlib/include/stdatomic.h
+:000000 100644 0000000... 643b969... A	include/newlib/include/stdint.h
+:000000 100644 0000000... c2418fa... A	include/newlib/include/stdio.h
+:000000 100644 0000000... a830c88... A	include/newlib/include/stdio_ext.h
+:000000 100644 0000000... ef21866... A	include/newlib/include/stdlib.h
+:000000 100644 0000000... 6325b46... A	include/newlib/include/string.h
+:000000 100644 0000000... 131d81d... A	include/newlib/include/strings.h
+:000000 100644 0000000... 1884136... A	include/newlib/include/sys/_default_fcntl.h
+:000000 100644 0000000... 07bc276... A	include/newlib/include/sys/_types.h
+:000000 100644 0000000... a5e613c... A	include/newlib/include/sys/cdefs.h
+:000000 100644 0000000... 0de3ffb... A	include/newlib/include/sys/config.h
+:000000 100644 0000000... 96314fb... A	include/newlib/include/sys/custom_file.h
+:000000 100644 0000000... 220150d... A	include/newlib/include/sys/dir.h
+:000000 100644 0000000... a3fb5c0... A	include/newlib/include/sys/dirent.h
+:000000 100644 0000000... c93b250... A	include/newlib/include/sys/errno.h
+:000000 100644 0000000... be85f40... A	include/newlib/include/sys/fcntl.h
+:000000 100644 0000000... 02fa1eb... A	include/newlib/include/sys/features.h
+:000000 100644 0000000... 58d4fac... A	include/newlib/include/sys/file.h
+:000000 100644 0000000... 09ea183... A	include/newlib/include/sys/iconvnls.h
+:000000 100644 0000000... 9075e35... A	include/newlib/include/sys/lock.h
+:000000 100644 0000000... ef203d3... A	include/newlib/include/sys/param.h
+:000000 100644 0000000... 4bc7dac... A	include/newlib/include/sys/queue.h
+:000000 100644 0000000... ce5b3ed... A	include/newlib/include/sys/reent.h
+:000000 100644 0000000... eb82755... A	include/newlib/include/sys/resource.h
+:000000 100644 0000000... bed14bf... A	include/newlib/include/sys/sched.h
+:000000 100644 0000000... 3d6ba08... A	include/newlib/include/sys/signal.h
+:000000 100644 0000000... dbd85ee... A	include/newlib/include/sys/stat.h
+:000000 100644 0000000... 0918fe1... A	include/newlib/include/sys/stdio.h
+:000000 100644 0000000... ceedf4b... A	include/newlib/include/sys/string.h
+:000000 100644 0000000... ba9dbd6... A	include/newlib/include/sys/syslimits.h
+:000000 100644 0000000... 1932580... A	include/newlib/include/sys/time.h
+:000000 100644 0000000... 0a2c3de... A	include/newlib/include/sys/timeb.h
+:000000 100644 0000000... 927812c... A	include/newlib/include/sys/times.h
+:000000 100644 0000000... ed33e0a... A	include/newlib/include/sys/types.h
+:000000 100644 0000000... d85195f... A	include/newlib/include/sys/unistd.h
+:000000 100644 0000000... 5e937f1... A	include/newlib/include/sys/utime.h
+:000000 100644 0000000... 73fe372... A	include/newlib/include/sys/wait.h
+:000000 100644 0000000... 07b06dd... A	include/newlib/include/tar.h
+:000000 100644 0000000... ee1820c... A	include/newlib/include/termios.h
+:000000 100644 0000000... f9c8311... A	include/newlib/include/tgmath.h
+:000000 100644 0000000... b91b039... A	include/newlib/include/time.h
+:000000 100644 0000000... 0040752... A	include/newlib/include/unctrl.h
+:000000 100644 0000000... f9fca84... A	include/newlib/include/unistd.h
+:000000 100644 0000000... 652891a... A	include/newlib/include/utime.h
+:000000 100644 0000000... 88cf6f8... A	include/newlib/include/utmp.h
+:000000 100644 0000000... cdc8571... A	include/newlib/include/wchar.h
+:000000 100644 0000000... c72c9de... A	include/newlib/include/wctype.h
+:000000 100644 0000000... 1f09a64... A	include/newlib/include/wordexp.h
+:000000 100644 0000000... ce8a40e... A	include/newlib/libc.a
+:000000 100644 0000000... 7ddd886... A	include/trap.h
+:000000 100644 0000000... 0fdf968... A	kernel/Makefile
+:000000 100644 0000000... 6b8cff8... A	kernel/include/common.h
+:000000 100644 0000000... fdc49f4... A	kernel/include/debug.h
+:000000 100644 0000000... c09a8a8... A	kernel/include/memory.h
+:000000 100644 0000000... 36b0fd4... A	kernel/include/x86.h
+:000000 100644 0000000... f5c0ffa... A	kernel/include/x86/cpu.h
+:000000 100644 0000000... f74cb09... A	kernel/include/x86/io.h
+:000000 100644 0000000... 90875c4... A	kernel/include/x86/memory.h
+:000000 100644 0000000... 369eff9... A	kernel/kernel.s
+:000000 100644 0000000... 9c803a5... A	kernel/src/driver/ide/cache.c
+:000000 100644 0000000... 223d655... A	kernel/src/driver/ide/disk.c
+:000000 100644 0000000... 6345f8e... A	kernel/src/driver/ide/dma.c
+:000000 100644 0000000... d93ec28... A	kernel/src/driver/ide/dma.h
+:000000 100644 0000000... 3e535b5... A	kernel/src/driver/ide/ide.c
+:000000 100644 0000000... 4b2856a... A	kernel/src/elf/elf.c
+:000000 100644 0000000... ed6d076... A	kernel/src/fs/fs.c
+:000000 100644 0000000... 86dc67c... A	kernel/src/irq/do_irq.S
+:000000 100644 0000000... 78f6020... A	kernel/src/irq/i8259.c
+:000000 100644 0000000... 33cf0c2... A	kernel/src/irq/idt.c
+:000000 100644 0000000... 8f7165e... A	kernel/src/irq/irq_handle.c
+:000000 100644 0000000... cedfd2f... A	kernel/src/lib/misc.c
+:000000 100644 0000000... 87e6149... A	kernel/src/lib/printk.c
+:000000 100644 0000000... 0b3f967... A	kernel/src/lib/serial.c
+:000000 100644 0000000... 4d21489... A	kernel/src/main.c
+:000000 100644 0000000... 771a8b8... A	kernel/src/memory/kvm.c
+:000000 100644 0000000... e5e6b9a... A	kernel/src/memory/mm.c
+:000000 100644 0000000... f872ead... A	kernel/src/memory/vmem.c
+:000000 100644 0000000... a8009b6... A	kernel/src/syscall/do_syscall.c
+:000000 100644 0000000... 6b6457e... A	kernel/start/start.S
+:000000 100644 0000000... cb3039d... A	nemu/.fuse_hidden0000056000000001
+:000000 100644 0000000... e80dbae... A	nemu/.fuse_hidden00003d0900000008
+:000000 100644 0000000... 4cd64e7... A	nemu/.fuse_hidden00003d4500000009
+:000000 100644 0000000... 9f9179f... A	nemu/.fuse_hidden000043f30000000a
+:000000 100644 0000000... b7933c2... A	nemu/.fuse_hidden00006fba0000000b
+:000000 100644 0000000... 2d551ae... A	nemu/.fuse_hidden0000b5c50000000d
+:000000 100644 0000000... cd4c26f... A	nemu/.fuse_hidden0000b7560000000e
+:000000 100644 0000000... 7aa0f6e... A	nemu/.fuse_hidden0000b77e0000000f
+:000000 100644 0000000... 7aa0f6e... A	nemu/.fuse_hidden0000b7ba00000010
+:000000 100644 0000000... 950745c... A	nemu/.fuse_hidden0000d0550000203e
+:000000 100644 0000000... 3b9a626... A	nemu/Makefile
+:000000 100644 0000000... 2e4d178... A	nemu/include/cpu/alu.h
+:000000 100644 0000000... c25bd3e... A	nemu/include/cpu/cpu.h
+:000000 100644 0000000... 2e2607e... A	nemu/include/cpu/fpu.h
+:000000 100644 0000000... cc8230b... A	nemu/include/cpu/instr.h
+:000000 100644 0000000... 59a18ac... A	nemu/include/cpu/instr/adc.h
+:000000 100644 0000000... 5f4cd2b... A	nemu/include/cpu/instr/add.h
+:000000 100644 0000000... b7daba0... A	nemu/include/cpu/instr/and.h
+:000000 100644 0000000... 4ef0dc1... A	nemu/include/cpu/instr/call.h
+:000000 100644 0000000... b2fd223... A	nemu/include/cpu/instr/cli.h
+:000000 100644 0000000... b49a205... A	nemu/include/cpu/instr/cmp.h
+:000000 100644 0000000... 157cee8... A	nemu/include/cpu/instr/cmps.h
+:000000 100644 0000000... 6a03559... A	nemu/include/cpu/instr/dec.h
+:000000 100644 0000000... 5c90363... A	nemu/include/cpu/instr/div.h
+:000000 100644 0000000... 6bd7de4... A	nemu/include/cpu/instr/flags.h
+:000000 100644 0000000... 6c9bb15... A	nemu/include/cpu/instr/group.h
+:000000 100644 0000000... 546e88d... A	nemu/include/cpu/instr/idiv.h
+:000000 100644 0000000... a443a35... A	nemu/include/cpu/instr/imul.h
+:000000 100644 0000000... 02818d6... A	nemu/include/cpu/instr/in.h
+:000000 100644 0000000... 8b861d6... A	nemu/include/cpu/instr/inc.h
+:000000 100644 0000000... d601777... A	nemu/include/cpu/instr/intb.h
+:000000 100644 0000000... 6be7157... A	nemu/include/cpu/instr/jcc.h
+:000000 100644 0000000... ea7fa08... A	nemu/include/cpu/instr/jmp.h
+:000000 100644 0000000... f14fb0d... A	nemu/include/cpu/instr/lea.h
+:000000 100644 0000000... 0e41bfb... A	nemu/include/cpu/instr/leave.h
+:000000 100644 0000000... 7d3309d... A	nemu/include/cpu/instr/lgdt.h
+:000000 100644 0000000... 6f9510d... A	nemu/include/cpu/instr/lidt.h
+:000000 100644 0000000... d8fbb47... A	nemu/include/cpu/instr/ljmp.h
+:000000 100644 0000000... bbef929... A	nemu/include/cpu/instr/mov.h
+:000000 100644 0000000... a4f8cc8... A	nemu/include/cpu/instr/mul.h
+:000000 100644 0000000... 23f6026... A	nemu/include/cpu/instr/neg.h
+:000000 100644 0000000... 679183f... A	nemu/include/cpu/instr/not.h
+:000000 100644 0000000... e09ce1f... A	nemu/include/cpu/instr/or.h
+:000000 100644 0000000... 3cae78a... A	nemu/include/cpu/instr/out.h
+:000000 100644 0000000... 0768d5c... A	nemu/include/cpu/instr/pop.h
+:000000 100644 0000000... 21b9e24... A	nemu/include/cpu/instr/push.h
+:000000 100644 0000000... ab56567... A	nemu/include/cpu/instr/ret.h
+:000000 100644 0000000... 05d59a8... A	nemu/include/cpu/instr/sbb.h
+:000000 100644 0000000... 7df5593... A	nemu/include/cpu/instr/setcc.h
+:000000 100644 0000000... b7ca8e8... A	nemu/include/cpu/instr/shift.h
+:000000 100644 0000000... d1091cd... A	nemu/include/cpu/instr/sidt.h
+:000000 100644 0000000... 81fdf23... A	nemu/include/cpu/instr/special.h
+:000000 100644 0000000... d2f9fa7... A	nemu/include/cpu/instr/sti.h
+:000000 100644 0000000... 821d99e... A	nemu/include/cpu/instr/stos.h
+:000000 100644 0000000... 0053a52... A	nemu/include/cpu/instr/sub.h
+:000000 100644 0000000... aa3ea35... A	nemu/include/cpu/instr/test.h
+:000000 100644 0000000... d8ca5f2... A	nemu/include/cpu/instr/x87.h
+:000000 100644 0000000... 997e8dd... A	nemu/include/cpu/instr/xor.h
+:000000 100644 0000000... a61bd17... A	nemu/include/cpu/instr_helper.h
+:000000 100644 0000000... 1e4217b... A	nemu/include/cpu/intr.h
+:000000 100644 0000000... 5250e17... A	nemu/include/cpu/modrm.h
+:000000 100644 0000000... 0d52701... A	nemu/include/cpu/operand.h
+:000000 100644 0000000... 67f43b4... A	nemu/include/cpu/reg.h
+:000000 100644 0000000... 9db8eca... A	nemu/include/cpu/reg_fpu.h
+:000000 100644 0000000... 5d81e22... A	nemu/include/cpu/sib.h
+:000000 100644 0000000... dd18ab0... A	nemu/include/device/i8259_pic.h
+:000000 100644 0000000... b1b60cd... A	nemu/include/device/ide.h
+:000000 100644 0000000... 89ee35d... A	nemu/include/device/keyboard.h
+:000000 100644 0000000... abf78c3... A	nemu/include/device/mm_io.h
+:000000 100644 0000000... d39fe56... A	nemu/include/device/port_io.h
+:000000 100644 0000000... 592e4c4... A	nemu/include/device/sdl.h
+:000000 100644 0000000... 554f103... A	nemu/include/device/serial.h
+:000000 100644 0000000... 94a1ce9... A	nemu/include/device/timer.h
+:000000 100644 0000000... e0a8324... A	nemu/include/device/vga.h
+:000000 100644 0000000... 7c8a238... A	nemu/include/macro.h
+:000000 100644 0000000... f0b3b1c... A	nemu/include/memory/cache.h
+:000000 100644 0000000... 3544d5e... A	nemu/include/memory/memory.h
+:000000 100644 0000000... 2c243e9... A	nemu/include/memory/mmu/page.h
+:000000 100644 0000000... b93fe5b... A	nemu/include/memory/mmu/segment.h
+:000000 100644 0000000... a6f5979... A	nemu/include/memory/mmu/tlb.h
+:000000 100644 0000000... 9b85977... A	nemu/include/monitor/breakpoint.h
+:000000 100644 0000000... 08381cc... A	nemu/include/monitor/ui.h
+:000000 100644 0000000... cb98b1b... A	nemu/include/nemu.h
+:000000 100644 0000000... fd8aea8... A	nemu/src/cpu/alu.c
+:000000 100644 0000000... c537c97... A	nemu/src/cpu/cpu.c
+:000000 100644 0000000... 9f16ebf... A	nemu/src/cpu/decode/debug.c
+:000000 100644 0000000... 993d460... A	nemu/src/cpu/decode/modrm.c
+:000000 100644 0000000... 037e0fd... A	nemu/src/cpu/decode/opcode.c
+:000000 100644 0000000... fd0ae46... A	nemu/src/cpu/decode/operand.c
+:000000 100644 0000000... 346c982... A	nemu/src/cpu/decode/sib.c
+:000000 100644 0000000... db92f1d... A	nemu/src/cpu/fpu.c
+:000000 100644 0000000... 581921d... A	nemu/src/cpu/instr/adc.c
+:000000 100644 0000000... 06703e2... A	nemu/src/cpu/instr/add.c
+:000000 100644 0000000... 90f70c4... A	nemu/src/cpu/instr/and.c
+:000000 100644 0000000... 42969f2... A	nemu/src/cpu/instr/bt.c
+:000000 100644 0000000... 3d524fd... A	nemu/src/cpu/instr/call.c
+:000000 100644 0000000... cc24734... A	nemu/src/cpu/instr/cbw.c
+:000000 100644 0000000... 749f943... A	nemu/src/cpu/instr/cli.c
+:000000 100644 0000000... b589da0... A	nemu/src/cpu/instr/cltd.c
+:000000 100644 0000000... 7a25e43... A	nemu/src/cpu/instr/cmov.c
+:000000 100644 0000000... 65e36d0... A	nemu/src/cpu/instr/cmp.c
+:000000 100644 0000000... 497bd8b... A	nemu/src/cpu/instr/cmps.c
+:000000 100644 0000000... 3a56fcc... A	nemu/src/cpu/instr/data_size.c
+:000000 100644 0000000... e1f4de9... A	nemu/src/cpu/instr/dec.c
+:000000 100644 0000000... 4444f09... A	nemu/src/cpu/instr/div.c
+:000000 100644 0000000... d343461... A	nemu/src/cpu/instr/flags.c
+:000000 100644 0000000... 7fedd44... A	nemu/src/cpu/instr/group.c
+:000000 100644 0000000... 7daa4f9... A	nemu/src/cpu/instr/hlt.c
+:000000 100644 0000000... 1da4dcc... A	nemu/src/cpu/instr/idiv.c
+:000000 100644 0000000... fcf9c06... A	nemu/src/cpu/instr/imul.c
+:000000 100644 0000000... 7ea86ea... A	nemu/src/cpu/instr/in.c
+:000000 100644 0000000... fd20cfb... A	nemu/src/cpu/instr/inc.c
+:000000 100644 0000000... 95f3e5a... A	nemu/src/cpu/instr/intb.c
+:000000 100644 0000000... 9637147... A	nemu/src/cpu/instr/inv.c
+:000000 100644 0000000... fdbe7e7... A	nemu/src/cpu/instr/jcc.c
+:000000 100644 0000000... f1a7cc2... A	nemu/src/cpu/instr/jmp.c
+:000000 100644 0000000... ddf22d8... A	nemu/src/cpu/instr/lea.c
+:000000 100644 0000000... 90f2e24... A	nemu/src/cpu/instr/leave.c
+:000000 100644 0000000... 660244e... A	nemu/src/cpu/instr/lgdt.c
+:000000 100644 0000000... b6a5a03... A	nemu/src/cpu/instr/lidt.c
+:000000 100644 0000000... 126247c... A	nemu/src/cpu/instr/ljmp.c
+:000000 100644 0000000... 5930a7f... A	nemu/src/cpu/instr/mov.c
+:000000 100644 0000000... 163d1e6... A	nemu/src/cpu/instr/movs.c
+:000000 100644 0000000... 2d8f1e1... A	nemu/src/cpu/instr/mul.c
+:000000 100644 0000000... 5793941... A	nemu/src/cpu/instr/neg.c
+:000000 100644 0000000... 8af4618... A	nemu/src/cpu/instr/nemu_trap.c
+:000000 100644 0000000... f943576... A	nemu/src/cpu/instr/nop.c
+:000000 100644 0000000... 75ae70c... A	nemu/src/cpu/instr/not.c
+:000000 100644 0000000... 144220c... A	nemu/src/cpu/instr/opcode_2_byte.c
+:000000 100644 0000000... c085030... A	nemu/src/cpu/instr/or.c
+:000000 100644 0000000... 759999b... A	nemu/src/cpu/instr/out.c
+:000000 100644 0000000... 2f87d81... A	nemu/src/cpu/instr/pop.c
+:000000 100644 0000000... b95dedb... A	nemu/src/cpu/instr/push.c
+:000000 100644 0000000... 47c3185... A	nemu/src/cpu/instr/rep_repe.c
+:000000 100644 0000000... 3237606... A	nemu/src/cpu/instr/ret.c
+:000000 100644 0000000... 52132c4... A	nemu/src/cpu/instr/sar.c
+:000000 100644 0000000... 294f087... A	nemu/src/cpu/instr/sbb.c
+:000000 100644 0000000... ac69b8e... A	nemu/src/cpu/instr/setcc.c
+:000000 100644 0000000... ef5f254... A	nemu/src/cpu/instr/shl.c
+:000000 100644 0000000... af9ef06... A	nemu/src/cpu/instr/shr.c
+:000000 100644 0000000... 60ded8a... A	nemu/src/cpu/instr/sidt.c
+:000000 100644 0000000... b33bef0... A	nemu/src/cpu/instr/sti.c
+:000000 100644 0000000... 530a0ae... A	nemu/src/cpu/instr/stos.c
+:000000 100644 0000000... b3c6752... A	nemu/src/cpu/instr/sub.c
+:000000 100644 0000000... d230e4f... A	nemu/src/cpu/instr/test.c
+:000000 100644 0000000... d26ba4e... A	nemu/src/cpu/instr/x87.c
+:000000 100644 0000000... 3f31778... A	nemu/src/cpu/instr/xor.c
+:000000 100644 0000000... bbc9f0d... A	nemu/src/cpu/intr.c
+:000000 100644 0000000... 96855f1... A	nemu/src/cpu/reg.c
+:000000 100644 0000000... c9275dd... A	nemu/src/cpu/test/alu_test.c
+:000000 100644 0000000... 9e89398... A	nemu/src/cpu/test/fpu_test.c
+:000000 100644 0000000... b243b1d... A	nemu/src/device/dev/ide.c
+:000000 100644 0000000... 73541eb... A	nemu/src/device/dev/keyboard.c
+:000000 100644 0000000... 6150e16... A	nemu/src/device/dev/serial.c
+:000000 100644 0000000... bcbcda2... A	nemu/src/device/dev/timer.c
+:000000 100644 0000000... dcb1d58... A	nemu/src/device/dev/vga-palette.c
+:000000 100644 0000000... 026775d... A	nemu/src/device/dev/vga.c
+:000000 100644 0000000... fd734b5... A	nemu/src/device/i8259_pic.c
+:000000 100644 0000000... 523f38f... A	nemu/src/device/io/mm_io.c
+:000000 100644 0000000... 036c665... A	nemu/src/device/io/port_io.c
+:000000 100644 0000000... f87dfa1... A	nemu/src/device/sdl.c
+:000000 100644 0000000... bf0a57f... A	nemu/src/main.c
+:000000 100644 0000000... fbb16ee... A	nemu/src/memory/cache.c
+:000000 100644 0000000... b2dc216... A	nemu/src/memory/memory.c
+:000000 100644 0000000... bb09ed5... A	nemu/src/memory/mmu/page.c
+:000000 100644 0000000... 796ab2f... A	nemu/src/memory/mmu/segment.c
+:000000 100644 0000000... e918481... A	nemu/src/memory/mmu/tlb.c
+:000000 100644 0000000... 6bbff3b... A	nemu/src/monitor/breakpoint.c
+:000000 100644 0000000... 2097c54... A	nemu/src/monitor/elf.c
+:000000 100644 0000000... 0684d15... A	nemu/src/monitor/expr.c
+:000000 100644 0000000... 2c85533... A	nemu/src/monitor/ui.c
+:000000 100644 0000000... db084c6... A	record.txt
+:000000 100644 0000000... 9fff30d... A	testcase/Makefile
+:000000 100644 0000000... e3856ac... A	testcase/src/add-longlong.c
+:000000 100644 0000000... a25f60b... A	testcase/src/add.c
+:000000 100644 0000000... d925473... A	testcase/src/bit.c
+:000000 100644 0000000... 5f2c02c... A	testcase/src/bubble-sort.c
+:000000 100644 0000000... 820e8a5... A	testcase/src/echo.c
+:000000 100644 0000000... 68de0e6... A	testcase/src/fact.c
+:000000 100644 0000000... 8a25122... A	testcase/src/fib.c
+:000000 100644 0000000... 440158f... A	testcase/src/gotbaha.c
+:000000 100644 0000000... c7a9147... A	testcase/src/hello-inline.c
+:000000 100644 0000000... c52da6d... A	testcase/src/hello-str.c
+:000000 100644 0000000... 57f9254... A	testcase/src/if-else.c
+:000000 100644 0000000... 3b93044... A	testcase/src/leap-year.c
+:000000 100644 0000000... 83a46d0... A	testcase/src/matrix-mul-small.c
+:000000 100644 0000000... fe19086... A	testcase/src/matrix-mul.c
+:000000 100644 0000000... 6c9e329... A	testcase/src/max.c
+:000000 100644 0000000... 50fdbc7... A	testcase/src/min3.c
+:000000 100644 0000000... 82acdf9... A	testcase/src/mov-c.c
+:000000 100644 0000000... 728c1ad... A	testcase/src/mov-cmp.S
+:000000 100644 0000000... 6c5806a... A	testcase/src/mov-jcc.c
+:000000 100644 0000000... 857fae6... A	testcase/src/mov.S
+:000000 100644 0000000... abf8010... A	testcase/src/movsx.c
+:000000 100644 0000000... 81318ff... A	testcase/src/mul-longlong.c
+:000000 100644 0000000... cb1fa9e... A	testcase/src/pascal.c
+:000000 100644 0000000... 75ea381... A	testcase/src/prime.c
+:000000 100644 0000000... 88166bc... A	testcase/src/quick-sort.c
+:000000 100644 0000000... 8722fc9... A	testcase/src/select-sort.c
+:000000 100644 0000000... 1265e7b... A	testcase/src/shuixianhua.c
+:000000 100644 0000000... 23a202f... A	testcase/src/string.c
+:000000 100644 0000000... eed0912... A	testcase/src/struct.c
+:000000 100644 0000000... 1fe4c4a... A	testcase/src/sub-longlong.c
+:000000 100644 0000000... 8abc9af... A	testcase/src/sum.c
+:000000 100644 0000000... 32e923d... A	testcase/src/test-float.c
+:000000 100644 0000000... d43ff0d... A	testcase/src/wanshu.c
+:000000 100644 0000000... 2ea4b95... A	testcase/start.S
