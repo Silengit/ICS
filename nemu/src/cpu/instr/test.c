@@ -4,6 +4,7 @@ static void instr_execute_2op() {
 	operand_read(&opr_src);
 	operand_read(&opr_dest);
 	uint32_t temp = alu_and(opr_src.val,opr_dest.val);
+	//if data_size != 32 then sign_ext;
 	if(opr_src.data_size == 8 || opr_dest.data_size == 8)
 		cpu.eflags.SF = (temp & 0x80) ? 1 : 0;
 }
