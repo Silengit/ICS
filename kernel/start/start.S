@@ -5,7 +5,7 @@
 	.globl start
 	start:
 	# Set up a stack for C code.
-		#BREAK_POINT #note:delete
+		BREAK_POINT #note:delete
 		movl $0, %ebp
 		movl $(128 << 20), %esp
 		jmp init				# never return
